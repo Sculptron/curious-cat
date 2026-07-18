@@ -1,0 +1,40 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why are resource-rich countries poor?",
+    "calibration_level": "expert",
+    "assigned_visual_theme": "Mining Vibes",
+    "total_cards": 5
+  },
+  "journey_deck": [
+    {
+      "card_id": "card_01",
+      "type": "concept_card",
+      "act_title": "Act I",
+      "heading": "The Paradox",
+      "body_markdown": [
+        "# The Resource Curse",
+        "Countries rich in \\*\\*minerals\\*\\* often grow slower than resource-poor neighbors.",
+        "- Congo\n- Zambia\n- Angola"
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "smug" }
+    },
+    {
+      "card_id": "card_02",
+      "type": "checkpoint_card",
+      "heading": "Quick check",
+      "options": [
+        { "id": "a", "label": "Yes", "is_correct": true },
+        { "id": "b", "label": "No", "is_correct": true }
+      ],
+      "correct_feedback": "Right.",
+      "incorrect_feedback": "Wrong."
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "Explain the resource curse in one sentence.",
+    "mint_card": {
+      "title": "The Paradox of Plenty",
+      "category": "Economics"
+    }
+  }
+}

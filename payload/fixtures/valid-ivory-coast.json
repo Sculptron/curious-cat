@@ -1,0 +1,54 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why is there 'ivory' in Ivory Coast?",
+    "calibration_level": "mid",
+    "assigned_visual_theme": "maritime_trade",
+    "total_cards": 3
+  },
+  "journey_deck": [
+    {
+      "card_id": "card_01",
+      "type": "concept_card",
+      "act_title": "Act I — The Cargo Coast",
+      "heading": "A Coastline Mapped by its Cargo",
+      "body_markdown": [
+        "In the 1440s, Portuguese navigators weren't mapping West Africa to study local kingdoms.",
+        "They labeled each stretch of coast by **what could be loaded onto a ship there** — pepper, gold, slaves, and ivory."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "happy" }
+    },
+    {
+      "card_id": "card_02",
+      "type": "predict_card",
+      "heading": "What cargo do you think they found in massive abundance?",
+      "options": [
+        { "id": "a", "label": "Timber", "is_correct": false },
+        { "id": "b", "label": "Ivory", "is_correct": true },
+        { "id": "c", "label": "Pepper", "is_correct": false }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "celebrating",
+        "feedback_text": "Spot on! Elephant ivory was so plentiful here that the coast was named for it — a **price tag that outlived the trade itself**."
+      }
+    },
+    {
+      "card_id": "card_03",
+      "type": "checkpoint_card",
+      "heading": "What was the primary purpose of early West African maritime maps?",
+      "options": [
+        { "id": "a", "label": "To understand local borders", "is_correct": false },
+        { "id": "b", "label": "To mark extractable resources", "is_correct": true }
+      ],
+      "correct_feedback": "Exactly! Coasts were named after cargo, not communities.",
+      "incorrect_feedback": "Almost! The navigators weren't interested in local politics — they were charting what could fill a ship's hold."
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence: why does a modern country carry the name of a 15th-century trade good?",
+    "mint_card": {
+      "title": "The Cargo Coast",
+      "category": "Geography & Trade",
+      "shareable_synthesis": "A coastline defined not by its people, but by **the cargo packed into 15th-century ships**."
+    }
+  }
+}
