@@ -1,0 +1,76 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why is there 'ivory' in Ivory Coast?",
+    "calibration_level": "mid",
+    "assigned_visual_theme": "colonial_cartography",
+    "total_cards": 5
+  },
+  "journey_deck": [
+    {
+      "card_id": "card_1",
+      "type": "concept_card",
+      "act_title": "The Coast of Commodities",
+      "heading": "Europe named this coastline like a shopping list",
+      "body_markdown": [
+        "Starting in the 1470s, Portuguese ships worked their way along the Gulf of Guinea and did something very literal: they named each stretch of coast after whatever they were buying there.",
+        "Grain Coast for melegueta pepper. Gold Coast for gold. Slave Coast for enslaved people. And this one, for elephant tusks: **Costa do Marfim**, the Ivory Coast."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "card_2",
+      "type": "concept_card",
+      "act_title": "The Coast of Commodities",
+      "heading": "Ivory was the export, not the identity",
+      "body_markdown": [
+        "By the 1600s, French traders had taken over the tusk trade there and renamed it Cote d'Ivoire. The label held through three centuries, formal French colonization in 1893, and independence in 1960.",
+        "The name records **what left the port**, not necessarily what was most abundant inland. Ivory was simply the stretch's specialty line item in European trading company ledgers."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "card_3",
+      "type": "predict_card",
+      "heading": "Guess before you keep going: why 'ivory,' specifically, here?",
+      "options": [
+        { "id": "opt_a", "label": "Elephants were far more numerous on this stretch than anywhere else in West Africa", "is_correct": false, "emoji": "🐘" },
+        { "id": "opt_b", "label": "This was the port where European ships loaded and sold the most tusks, wherever the elephants actually were", "is_correct": true },
+        { "id": "opt_c", "label": "The coastline's shape resembled a carved tusk on early maps", "is_correct": false }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "celebrating",
+        "feedback_text": "Traders drew coastal zones by cargo manifest, not wildlife census. Tusks reaching this port were funneled in from hunting grounds deep in the forest interior, arriving here because **this was where the trading posts and ships were**, not because elephants were denser on this exact shoreline."
+      }
+    },
+    {
+      "card_id": "card_4",
+      "type": "checkpoint_card",
+      "heading": "Same logic, different coast: what is 'Gold Coast' (modern Ghana) actually naming?",
+      "options": [
+        { "id": "opt_a", "label": "The coast where gold was the chief export loaded onto European ships", "is_correct": true },
+        { "id": "opt_b", "label": "The coast with unusually golden-colored sand beaches", "is_correct": false }
+      ],
+      "correct_feedback": "Exactly right. Same naming convention, different commodity: European traders carved up this whole stretch of West Africa by what left each port, and gold was the specialty a bit further east.",
+      "incorrect_feedback": "Not quite, the sand had nothing to do with it. Gold Coast follows the exact same convention as Ivory Coast: a European trading name for the commodity that dominated that port's exports, in this case gold rather than tusks."
+    },
+    {
+      "card_id": "card_5",
+      "type": "concept_card",
+      "act_title": "The Coast of Commodities",
+      "heading": "The name outlived what it named",
+      "body_markdown": [
+        "The ivory trade that gave the country its name also helped empty it of elephants. Tusk exports from this stretch ran into the tens of thousands of pounds a year through the 1600s and 1700s.",
+        "Today, conservationists estimate only a few hundred forest elephants survive in Cote d'Ivoire, scattered across a handful of isolated reserves. **The country kept the name long after it lost most of what the name described.**"
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "wide_eyed" }
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence, explain to a friend why it's called Ivory Coast, and why that name is a bit of a fossil today.",
+    "mint_card": {
+      "title": "The Coast of Commodities",
+      "category": "Colonial Trade & Naming",
+      "shareable_synthesis": "Ivory Coast isn't named for having the most elephants, it's named for being the port where Europeans loaded the most tusks, and **the trade that named it helped wipe out the elephants it was named for**."
+    }
+  }
+}

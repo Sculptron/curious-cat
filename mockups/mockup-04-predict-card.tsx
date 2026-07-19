@@ -209,9 +209,13 @@ export default function PredictCardMockup() {
                   {!showResult && <div className="absolute inset-0 crate-texture opacity-30 mix-blend-overlay"></div>}
                   
                   <div className="flex items-center gap-4 relative z-10">
-                    <span className={`text-4xl filter drop-shadow-md transition-transform ${isSelected && !cargo.isCorrect ? 'grayscale opacity-50' : ''}`}>
-                      {cargo.emoji}
-                    </span>
+                    {/* Icon slot collapses entirely when the payload omits emoji (abstract
+                        options get no icon rather than a weak match or empty placeholder) */}
+                    {cargo.emoji && (
+                      <span className={`text-4xl filter drop-shadow-md transition-transform ${isSelected && !cargo.isCorrect ? 'grayscale opacity-50' : ''}`}>
+                        {cargo.emoji}
+                      </span>
+                    )}
                     <span className={`text-xl font-bold tracking-wide serif-header ${textClass}`}>
                       {cargo.label}
                     </span>

@@ -1,0 +1,89 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why does time seem to speed up as you get older?",
+    "calibration_level": "deep",
+    "assigned_visual_theme": "human_body_medicine",
+    "total_cards": 6
+  },
+  "journey_deck": [
+    {
+      "card_id": "concept_1",
+      "type": "concept_card",
+      "act_title": "Past the obvious answer",
+      "heading": "The fraction-of-your-life story isn't the real mechanism",
+      "body_markdown": [
+        "You already know the standard explanation: a year at age 5 is 20% of your life, a year at age 50 is 2%, so of course it feels smaller. That math is real, but it's not what's doing the heavy lifting.",
+        "Time-perception researchers have mostly moved past it, because it can't explain the sharpest version of the effect: why one **ordinary month** can feel like it evaporated, while a single week of something new felt like it lasted forever."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "concept_2",
+      "type": "concept_card",
+      "act_title": "Two clocks",
+      "heading": "You're running two different timers, and they disagree",
+      "body_markdown": [
+        "There's the clock running while an experience happens (the in-the-moment clock), and a completely separate clock that fires up later, when you look back and judge how long something took (the memory clock).",
+        "These two clocks routinely give opposite answers. A dull meeting can crawl in the moment and vanish from memory a week later. A **thrilling week is often the reverse**: it flies by while you're in it, then looms large in the rearview mirror."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "quizzical" }
+    },
+    {
+      "card_id": "predict_1",
+      "type": "predict_card",
+      "heading": "A year from now, which week takes up more space in your memory?",
+      "options": [
+        { "id": "a", "label": "A week of your normal daily routine", "is_correct": false },
+        { "id": "b", "label": "A week spent traveling somewhere new", "is_correct": true, "emoji": "🧳" }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "celebrating",
+        "feedback_text": "The travel week wins, and not by a little. **Your brain files memory by novelty, not by duration** - a new place generates dozens of small first-time details, and each one gets its own memory trace. A routine week barely gets encoded at all, so in hindsight it looks short, even though it took the same seven days."
+      }
+    },
+    {
+      "card_id": "concept_3",
+      "type": "concept_card",
+      "act_title": "Why childhood felt endless",
+      "heading": "Your twenties are where the novelty tap starts to close",
+      "body_markdown": [
+        "Childhood and adolescence are unusually dense with firsts: first day of school, first kiss, first job, first apartment, first heartbreak. Each first gets a rich memory trace, so a single childhood summer can feel, in memory, longer than an entire adult year.",
+        "By your thirties and forties, most days rhyme with a day you've already lived. Commute, work, dinner, sleep, repeat. Fewer novel events means fewer memory markers, which means less material for your memory clock to measure the year by - so the year compresses."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "checkpoint_1",
+      "type": "checkpoint_card",
+      "heading": "Quick check: what's actually shrinking as you age?",
+      "options": [
+        { "id": "a", "label": "The number of seconds in each day", "is_correct": false },
+        { "id": "b", "label": "The density of novel, memorable moments per day", "is_correct": true }
+      ],
+      "correct_feedback": "Exactly - the clock on the wall doesn't change, but the rate at which your days generate new memories to measure themselves by does.",
+      "incorrect_feedback": "Not quite - the seconds in a day are fixed. What changes is how many genuinely new, memorable moments get packed into those seconds. Fewer novel moments means your memory has less to measure the day by, so it compresses in hindsight."
+    },
+    {
+      "card_id": "sit_with_it_1",
+      "type": "sit_with_it_card",
+      "heading": "Is this just about memory, or is your internal clock literally slowing down?",
+      "perspective_left": {
+        "title": "The memory-density camp",
+        "summary": "Most time-perception researchers argue the effect is entirely retrospective: your moment-to-moment sense of duration doesn't change, only how long a period seems to have lasted once you look back, driven by how many novel memories got laid down."
+      },
+      "perspective_right": {
+        "title": "The biological-clock camp",
+        "summary": "A smaller group of neuroscientists, following work on dopamine-linked internal pacemakers, argue something more literal happens: the circuits generating your moment-to-moment sense of duration may fire more slowly with age, so a stretch of real time genuinely feels shorter as it passes, not just in memory."
+      },
+      "synthesis_payload": "Neither side has fully won. The memory-density evidence is stronger and more replicated, but the pacemaker research hasn't been ruled out, and the two mechanisms aren't mutually exclusive. **Researchers are still arguing about how much each one actually contributes.**"
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence, explain to a friend why last year felt short even though it had the same 365 days as when you were ten.",
+    "mint_card": {
+      "title": "The Shrinking Year",
+      "category": "Human Body and Mind",
+      "shareable_synthesis": "Time doesn't actually speed up - **your days just stop generating enough new memories to measure themselves by**."
+    }
+  }
+}

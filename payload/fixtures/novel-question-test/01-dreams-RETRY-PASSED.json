@@ -1,0 +1,87 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why do we dream?",
+    "calibration_level": "mid",
+    "assigned_visual_theme": "human_body_medicine",
+    "total_cards": 6
+  },
+  "journey_deck": [
+    {
+      "card_id": "card-1",
+      "type": "concept_card",
+      "act_title": "The Dreaming Brain",
+      "heading": "Your brain is almost as active dreaming as it is awake",
+      "body_markdown": [
+        "During REM sleep, the stage when most vivid dreaming happens, your brain's overall electrical activity looks a lot like being awake, and in some regions it's even busier. That single fact rules out the old idea that dreams are just meaningless static from a brain that's mostly shut down."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "card-2",
+      "type": "predict_card",
+      "heading": "Before you read on: which part of your brain goes quiet during a dream, letting the weirdness through?",
+      "options": [
+        { "id": "a", "label": "The amygdala, your emotion center", "is_correct": false },
+        { "id": "b", "label": "The prefrontal cortex, your logic and judgment center", "is_correct": true },
+        { "id": "c", "label": "The visual cortex, which processes what you see", "is_correct": false }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "wide_eyed",
+        "feedback_text": "Right idea. Your **dorsolateral prefrontal cortex**, the part that questions whether something makes sense, goes quiet during REM. That is why you can be chased by a talking cat and never stop to ask why."
+      }
+    },
+    {
+      "card_id": "card-3",
+      "type": "concept_card",
+      "act_title": "The Mechanism",
+      "heading": "A loud signal generator and a quiet critic",
+      "body_markdown": [
+        "During REM, your brainstem fires off essentially random electrical bursts into the higher brain. Your prefrontal cortex, the part that would normally flag an inconsistency, is offline. So the rest of your brain does what it always does with incoming signals: it tries to build a story out of them. That story is the dream. Neuroscientists call this the **activation-synthesis** model."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "card-4",
+      "type": "concept_card",
+      "act_title": "The Mechanism",
+      "heading": "Why dreams feel so emotional and so illogical",
+      "body_markdown": [
+        "Two brain regions move in opposite directions during REM. The **amygdala**, which drives fear and emotional intensity, ramps up to near-waking levels or higher. Meanwhile the logic-checking prefrontal cortex stays dim. High emotion paired with low judgment is why dreams are so often frightening or overwhelming, yet you rarely notice how strange they are until you wake up."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "quizzical" }
+    },
+    {
+      "card_id": "card-5",
+      "type": "checkpoint_card",
+      "heading": "Quick check: why don't you question the weirdness of a dream while it's happening?",
+      "options": [
+        { "id": "a", "label": "Because the prefrontal cortex, which checks logic, is offline", "is_correct": true },
+        { "id": "b", "label": "Because the eyes are closed, so the brain has no data to check against", "is_correct": false }
+      ],
+      "correct_feedback": "Exactly. With the logic-checking prefrontal cortex quiet, nothing flags the inconsistency in real time.",
+      "incorrect_feedback": "Close, but it isn't about the eyes. Your brain generates the dream internally, independent of what your eyes are doing. The real reason is that the **prefrontal cortex**, the region that checks whether something makes sense, goes quiet during REM, so nothing catches the weirdness while it's happening."
+    },
+    {
+      "card_id": "card-6",
+      "type": "sit_with_it_card",
+      "heading": "Sleep scientists still disagree on why dreams exist",
+      "perspective_left": {
+        "title": "Dreams are functional, not incidental",
+        "summary": "Researchers like Antti Revonsuo argue dreaming evolved because it works: rehearsing threats (being chased, falling, confronted) in a low-stakes simulation, and consolidating emotional memories, gave dreaming brains a survival edge over non-dreaming ones."
+      },
+      "perspective_right": {
+        "title": "Dreams are a side effect, not the point",
+        "summary": "Others, following the original activation-synthesis logic, argue the REM state itself, not the dream content, is what matters for the brain (memory processing, mood regulation). The narrative you experience is your cortex making sense of noise, a byproduct rather than something evolution selected for its own sake."
+      },
+      "synthesis_payload": "Both camps agree REM sleep matters and dream content isn't random. Where they split is whether the story your brain tells is doing real work, or is just the exhaust from a process happening underneath it. That question stays open in sleep science, not from lack of looking, but because dream content is genuinely hard to study with rigor."
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence, explain to a friend why your dreams feel so real and so illogical at the same time.",
+    "mint_card": {
+      "title": "The Unedited Brain",
+      "category": "human_body_medicine",
+      "shareable_synthesis": "Dreams feel real and make no sense for the same reason: your emotional brain is turned up, and your inner editor is turned off."
+    }
+  }
+}

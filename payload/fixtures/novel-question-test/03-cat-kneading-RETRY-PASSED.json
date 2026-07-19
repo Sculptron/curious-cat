@@ -1,0 +1,87 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why do cats knead with their paws before they lie down?",
+    "calibration_level": "fresh",
+    "assigned_visual_theme": "natural_world_biology",
+    "total_cards": 6
+  },
+  "journey_deck": [
+    {
+      "card_id": "c1",
+      "type": "concept_card",
+      "act_title": "The Behavior",
+      "heading": "Making Biscuits",
+      "body_markdown": [
+        "Watch a cat before it settles down and you'll see it: paws pressing rhythmically into a blanket, a cushion, sometimes your leg. Left paw, right paw, left paw, over and over.",
+        "Cat owners call it 'making biscuits.' It looks playful, but it's actually one of the most consistent, hard-wired behaviors in the entire species."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "c2",
+      "type": "concept_card",
+      "act_title": "The Origin",
+      "heading": "Where It Starts: The Nursing Reflex",
+      "body_markdown": [
+        "Kittens knead their mother's belly while nursing. The pressing motion physically stimulates the mammary glands and helps trigger milk letdown - the release of milk into the ducts so the kitten can feed.",
+        "It works because the kitten's brain pairs the motion with a flood of comfort: **the kneading reflex gets wired directly to feeling safe and fed**, weeks before the kitten has any other way to understand the world."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "c3",
+      "type": "predict_card",
+      "heading": "So why do grown cats - who aren't nursing, and have no mother's belly in sight - still do it?",
+      "options": [
+        { "id": "a", "label": "It's a leftover reflex from kittenhood that never switched off", "is_correct": true },
+        { "id": "b", "label": "It's a sign the cat is in physical pain", "is_correct": false },
+        { "id": "c", "label": "It's an attempt to dig a hole", "is_correct": false }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "celebrating",
+        "feedback_text": "Right - it's a **retained reflex**. The muscle memory and the emotional payoff (comfort, safety) stay linked long after the original reason - milk - disappears. That's why kneading shows up almost exclusively when a cat already feels relaxed."
+      }
+    },
+    {
+      "card_id": "c4",
+      "type": "concept_card",
+      "act_title": "A Second Reason",
+      "heading": "A Second Reason: Scent",
+      "body_markdown": [
+        "Cats have scent glands in their paw pads. Every knead presses a small amount of that scent - a chemical signal called a **pheromone** - into whatever surface they're pushing on.",
+        "That's a second, independent reason kneading persists: it's a quiet way of marking a spot as theirs, safe, and already claimed - right before they commit to lying down on it."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "quizzical" }
+    },
+    {
+      "card_id": "c5",
+      "type": "concept_card",
+      "act_title": "A Third Reason",
+      "heading": "A Third Reason: An Old Habit From the Wild",
+      "body_markdown": [
+        "Domestic cats' wild ancestors didn't have cushions. Before lying down in tall grass or leaves, a wild cat would press and pat the ground flat, testing it and softening it into a nest.",
+        "Many researchers think that pressing motion is the same one you see today - just aimed at a blanket instead of a patch of grass."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "c6",
+      "type": "checkpoint_card",
+      "heading": "Quick check: which of these is the strongest sign that kneading is a comfort behavior rather than random fidgeting?",
+      "options": [
+        { "id": "a", "label": "Cats knead almost exclusively when they're relaxed, right before settling down or being petted", "is_correct": true },
+        { "id": "b", "label": "Cats knead the fastest right after a meal", "is_correct": false }
+      ],
+      "correct_feedback": "Exactly. Kneading clusters around moments of relaxation and pre-sleep settling - not eating, not play, not stress. That timing is the biggest clue it's tied to comfort, not appetite or excitement.",
+      "incorrect_feedback": "Not quite - kneading doesn't actually spike right after meals. The real tell is timing: it shows up almost entirely in relaxed, pre-sleep, being-petted moments, which is why comfort, not food, is the throughline."
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence: why does an adult cat, far from any mother's belly, still knead before lying down?",
+    "mint_card": {
+      "title": "The Kitten Reflex That Never Left",
+      "category": "Animal Behavior",
+      "shareable_synthesis": "A cat kneading a blanket is running a nursing reflex from kittenhood - now repurposed for comfort, scent-marking, and nest-making all at once."
+    }
+  }
+}

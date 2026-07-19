@@ -1,0 +1,94 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why did the Roman Empire actually collapse?",
+    "calibration_level": "mid",
+    "assigned_visual_theme": "ancient_history_archaeology",
+    "total_cards": 6
+  },
+  "journey_deck": [
+    {
+      "card_id": "c1",
+      "type": "concept_card",
+      "act_title": "Setting the Frame",
+      "heading": "Two Empires, One 'Fall'",
+      "body_markdown": [
+        "When people say 'Rome fell,' they almost always mean the **Western Roman Empire** — the half centered on Italy, Gaul, Spain, and North Africa. The eastern half, ruled from Constantinople, kept functioning as the Byzantine Empire for another thousand years, until 1453.",
+        "So the real question isn't why Rome ended. It's why the western half stopped being able to fund an army, collect taxes, and hold a frontier, while the eastern half, facing many of the same pressures, didn't."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "c2",
+      "type": "concept_card",
+      "act_title": "The Mechanism",
+      "heading": "The Debasement Spiral",
+      "body_markdown": [
+        "Start with the money. Under Augustus, the standard silver coin was roughly 90% silver. By the 270s AD, it was closer to 5% — cut down so many times to pay for soldiers that it was barely silver at all.",
+        "This wasn't carelessness, it was the only lever available: the army had grown from roughly 300,000 troops under Augustus to over 600,000 by Diocletian's reign, while the tax base kept shrinking under raids, plague, and abandoned farmland.",
+        "The result was a **feedback loop**: a weaker currency drove inflation, inflation made it harder to pay and supply the army, and an underpaid army was less able to hold the frontier that protected the tax base in the first place."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "c3",
+      "type": "predict_card",
+      "heading": "If you had to name the single spark that ended it, what would historians point to?",
+      "options": [
+        { "id": "a", "label": "One decisive military defeat, like Adrianople in 378", "is_correct": false, "emoji": "⚔️" },
+        { "id": "b", "label": "The Vandals cutting off Rome's grain supply from Africa in 439", "is_correct": false, "emoji": "🌾" },
+        { "id": "c", "label": "No single spark — decades of fiscal and military strain that any shock could tip over", "is_correct": true }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "thinking",
+        "feedback_text": "Adrianople and the loss of African grain were real, painful blows, but neither one alone explains a collapse. The empire had absorbed catastrophic defeats before, like Cannae and Teutoburg, and recovered. By the 5th century, the difference is that **the fiscal base was too thin to absorb the next shock**, whatever it happened to be."
+      }
+    },
+    {
+      "card_id": "c4",
+      "type": "checkpoint_card",
+      "heading": "Quick check: what made the western frontier different from earlier centuries?",
+      "options": [
+        { "id": "a", "label": "The frontier itself moved to a worse, harder-to-defend location", "is_correct": false },
+        { "id": "b", "label": "The tax base funding the army had shrunk faster than the threats along the border", "is_correct": true }
+      ],
+      "correct_feedback": "Exactly. The frontier's geography barely changed. What changed was capacity to defend it.",
+      "incorrect_feedback": "Close, but the frontier's location was largely the same as centuries earlier. What actually shifted was capacity: a shrinking, disrupted tax base meant fewer soldiers, thinner pay, and less left over when a crisis hit."
+    },
+    {
+      "card_id": "c5",
+      "type": "concept_card",
+      "act_title": "The Breaking Points",
+      "heading": "The Timeline That Actually Broke It",
+      "body_markdown": [
+        "376: tens of thousands of Goths, pushed west by the Huns, cross the Danube asking for asylum inside imperial territory, and are mismanaged into open rebellion.",
+        "378: the eastern emperor Valens is killed at the Battle of Adrianople, one of Rome's worst defeats in centuries.",
+        "410: the Goth Alaric sacks Rome itself — not a fatal blow militarily, but a devastating psychological one.",
+        "439: the Vandals seize Carthage, cutting off grain shipments North Africa had supplied to Rome and Italy for centuries.",
+        "476: the Germanic general Odoacer deposes the last western emperor, a teenager named Romulus Augustulus, and simply doesn't appoint a replacement."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "wide_eyed" }
+    },
+    {
+      "card_id": "c6",
+      "type": "sit_with_it_card",
+      "heading": "So which is it: decline, or just... change?",
+      "perspective_left": {
+        "title": "The Decline camp",
+        "summary": "Historians in this tradition, echoing Gibbon and more recently Peter Heather, argue the empire was structurally hollowed out first: fiscal exhaustion, an overstretched military, and political instability (more than 20 claimants to the throne in the 3rd century alone). External pressure from Goths, Vandals, and Huns was the trigger, but only because a healthier empire would have absorbed it."
+      },
+      "perspective_right": {
+        "title": "The Transformation camp",
+        "summary": "Historians like Peter Brown and Walter Goffart argue 'collapse' overstates what happened. Roman law, Latin, Christianity, and Roman-style administration didn't vanish in 476, they were absorbed and continued under new Germanic kings for generations. From this view, the West wasn't destroyed so much as gradually repurposed."
+      },
+      "synthesis_payload": "Both camps agree on the facts: debasement, invasions, a shrinking tax base, 476. They disagree on what to call the outcome, a **catastrophic failure** of a system, or a **messy handoff** to successor states that kept most of Rome's substance running under new management. Historians still argue about which framing fits the evidence better, and that's a genuine, unresolved disagreement, not one with a clean answer."
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence, explain to a friend why the Western Roman Empire couldn't recover from invasions the way it had for centuries before.",
+    "mint_card": {
+      "title": "Rome Didn't Fall. It Ran Out of Money to Fight.",
+      "category": "Ancient History & Archaeology",
+      "shareable_synthesis": "The Western Roman Empire didn't die from one barbarian invasion, it died because **a shrinking tax base could no longer fund the army needed to hold the frontier**, and by 476, the next shock was one it simply couldn't absorb."
+    }
+  }
+}

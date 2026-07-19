@@ -1,0 +1,90 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why do cats knead with their paws before they lie down?",
+    "calibration_level": "fresh",
+    "assigned_visual_theme": "natural_world_biology",
+    "total_cards": 6
+  },
+  "journey_deck": [
+    {
+      "card_id": "card_1",
+      "type": "concept_card",
+      "act_title": "Act 1: The Behavior Itself",
+      "heading": "What kneading actually looks like",
+      "body_markdown": [
+        "Cat owners call it **making biscuits**: a cat presses its front paws into a soft surface, alternating left and right, sometimes flexing its claws in and out, right before it curls up to sleep.",
+        "It looks like a small, rhythmic massage of the blanket or your lap. That rhythm is the first clue to where the behavior comes from — it is almost identical to a motion cats make at a much younger age."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "card_2",
+      "type": "concept_card",
+      "act_title": "Act 2: Where It Starts",
+      "heading": "A newborn reflex",
+      "body_markdown": [
+        "Kittens start kneading within hours of birth. While nursing, a kitten presses its paws against its mother's belly near the mammary glands.",
+        "That pressure triggers milk letdown — it physically helps milk flow, and it is paired with the release of prolactin and oxytocin, hormones tied to bonding and comfort.",
+        "By the time a kitten is weaned, kneading is wired into its brain as **the motion that means safety and food**. It does not get unwired just because the kitten grows up."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "card_3",
+      "type": "predict_card",
+      "heading": "So why would a full-grown cat, with no milk to stimulate, still do this before a nap on the couch?",
+      "options": [
+        { "id": "opt_a", "label": "Pure leftover habit from kittenhood, no current function", "is_correct": false },
+        { "id": "opt_b", "label": "It leaves a scent from glands in the paw pads", "is_correct": true, "emoji": "🐾" },
+        { "id": "opt_c", "label": "It is testing whether the surface is edible", "is_correct": false }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "celebrating",
+        "feedback_text": "Both things are true at once. The motor pattern is a holdover from nursing, but adult cats also have **interdigital scent glands** between their paw pads, and kneading presses those glands into the surface."
+      }
+    },
+    {
+      "card_id": "card_4",
+      "type": "concept_card",
+      "act_title": "Act 3: Marking the Spot",
+      "heading": "Claiming the bed",
+      "body_markdown": [
+        "Every time a cat kneads a blanket, cushion, or your leg, it deposits a faint dose of its own pheromones there.",
+        "To the cat, that spot now smells unmistakably like home. Kneading right before lying down is a two-step act: prepare the spot, then claim it. A cat that trusts a surface enough to mark it is a cat that feels safe enough to sleep on it."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "happy" }
+    },
+    {
+      "card_id": "card_5",
+      "type": "concept_card",
+      "act_title": "Act 4: The Wild Ancestor",
+      "heading": "Flattening the grass",
+      "body_markdown": [
+        "There is a second, older explanation layered on top of the nursing one. Wild ancestors of the domestic cat, like the African wildcat, would pat down grass and leaves before settling in for the night.",
+        "That kneading motion flattened vegetation into a softer nest and let the cat feel around for thorns, insects, or uneven ground with its paws before committing to lie down.",
+        "A modern housecat kneading a fleece blanket is running the same old-world safety check on a surface that has not needed it in thousands of generations."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "wide_eyed" }
+    },
+    {
+      "card_id": "card_6",
+      "type": "checkpoint_card",
+      "heading": "Quick check: what is the single best description of why cats knead before lying down?",
+      "options": [
+        { "id": "opt_a", "label": "One leftover nursing reflex with no other purpose", "is_correct": false },
+        { "id": "opt_b", "label": "A blend of an old nursing reflex, scent-marking, and an ancestral nest-check, all in one motion", "is_correct": true },
+        { "id": "opt_c", "label": "A learned trick cats pick up by watching their owners", "is_correct": false }
+      ],
+      "correct_feedback": "Exactly. Kneading is not one behavior with one cause — it is three overlapping instincts firing through the same paw motion: comfort from kittenhood, scent-marking through paw glands, and a nest-check inherited from wild ancestors.",
+      "incorrect_feedback": "Close, but kneading is not that simple. It is not just the nursing reflex on its own, and cats are not copying anything from their owners. Three separate, older instincts — nursing comfort, scent-marking, and an ancestral nest-check for safety — all happen to use the same paw motion, which is why it shows up right before a cat settles down."
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence, explain to a friend why your cat kneads the blanket before it lies down.",
+    "mint_card": {
+      "title": "The Biscuit Instinct",
+      "category": "Natural World & Biology",
+      "shareable_synthesis": "A cat kneading your lap is running three instincts at once: **a nursing reflex from kittenhood, a scent-mark claiming the spot, and a wild ancestor's old safety check on the ground beneath it**."
+    }
+  }
+}

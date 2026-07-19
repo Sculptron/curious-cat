@@ -1,0 +1,79 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why does my phone's battery drain faster in cold weather?",
+    "calibration_level": "mid",
+    "assigned_visual_theme": "everyday_physics",
+    "total_cards": 5
+  },
+  "journey_deck": [
+    {
+      "card_id": "card_1",
+      "type": "concept_card",
+      "act_title": "The Real Culprit",
+      "heading": "It's not about energy, it's about chemistry",
+      "body_markdown": [
+        "A lithium-ion battery makes power by shuttling ions back and forth through a liquid electrolyte between two electrodes.",
+        "Cold thickens that electrolyte, the same way syrup pours slower from the fridge than off the counter. Slower ions mean the battery struggles to push current out fast, and that shows up as **higher internal resistance**.",
+        "Nothing about the stored chemical energy actually disappears in the cold. What changes is how fast the battery can deliver it."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "card_2",
+      "type": "predict_card",
+      "heading": "Before we go further: why do you think a cold phone reads 'battery low' so fast?",
+      "options": [
+        { "id": "opt_a", "label": "The battery burns through its stored energy faster in the cold", "is_correct": false },
+        { "id": "opt_b", "label": "Cold slows the ions inside the battery, spiking its internal resistance", "is_correct": true },
+        { "id": "opt_c", "label": "Cold weather interferes with the phone's touchscreen and software", "is_correct": false }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "wide_eyed",
+        "feedback_text": "It's B. The battery isn't spending its energy faster, it's having a harder time pushing that energy out. Higher internal resistance means the same task pulls the battery's voltage down further and faster than it would at room temperature."
+      }
+    },
+    {
+      "card_id": "card_3",
+      "type": "concept_card",
+      "act_title": "The Shutoff Point",
+      "heading": "Why the phone gives up, even with charge left",
+      "body_markdown": [
+        "Phones don't run down to 0 volts. Software cuts power once voltage drops below a safety threshold, because forcing a chip to run on too little voltage risks corrupting data or damaging hardware.",
+        "Cold-induced resistance makes voltage sag hard under any real load, opening the camera, pinging a cell tower, running GPS. That sag can cross the shutoff threshold well before the battery's actual stored charge runs out.",
+        "This is why a phone that 'died' outside in the cold often **comes back to a real percentage** once it warms up in your pocket. The charge was there the whole time, the voltage just couldn't clear the bar."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "card_4",
+      "type": "checkpoint_card",
+      "heading": "Quick check: you bring your 'dead' cold phone inside. Ten minutes later...",
+      "options": [
+        { "id": "opt_a", "label": "It stays dead. Whatever charge was left is gone for good.", "is_correct": false },
+        { "id": "opt_b", "label": "A real chunk of battery percentage reappears once it warms up.", "is_correct": true }
+      ],
+      "correct_feedback": "Right. Warming the battery loosens up the electrolyte, resistance drops, voltage climbs back over the shutoff threshold, and the phone can access charge that was sitting there the whole time.",
+      "incorrect_feedback": "Not quite. Nothing was actually spent. The charge was trapped behind a voltage sag caused by cold, not true depletion. Warm the battery and that percentage usually comes right back."
+    },
+    {
+      "card_id": "card_5",
+      "type": "concept_card",
+      "act_title": "The Numbers",
+      "heading": "Where the real cliff is",
+      "body_markdown": [
+        "Most lithium-ion phone batteries are rated to discharge between about 0°C and 35°C (32°F to 95°F). Below freezing, usable capacity drops noticeably, and below roughly -20°C many phones will auto-shutdown to protect the battery.",
+        "A little of the drain in cold weather is genuinely extra draw, brighter screens fighting glare, a modem working harder to hold a weak signal, GPS running for navigation. But those add up to far less than the resistance effect.",
+        "**The chemistry, not the app you left open, is almost always the main reason your phone dies faster in the cold.**"
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "encouraging" }
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence: why does a phone lose charge faster in the cold, and why does it often recover once it warms up?",
+    "mint_card": {
+      "title": "The Battery That Wasn't Really Dying",
+      "category": "everyday_physics",
+      "shareable_synthesis": "**Cold doesn't drain your battery, it makes your battery temporarily worse at delivering the charge it already has.**"
+    }
+  }
+}

@@ -23,8 +23,8 @@
       "type": "checkpoint_card",
       "heading": "Quick check",
       "options": [
-        { "id": "a", "label": "Yes", "is_correct": true },
-        { "id": "b", "label": "No", "is_correct": true }
+        { "id": "a", "label": "Yes", "is_correct": true, "emoji": "thumbs up" },
+        { "id": "b", "label": "No", "is_correct": true, "emoji": "👍👎" }
       ],
       "correct_feedback": "Right.",
       "incorrect_feedback": "Wrong."

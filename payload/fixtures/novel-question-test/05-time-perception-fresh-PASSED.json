@@ -1,0 +1,113 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why does time seem to speed up as you get older?",
+    "calibration_level": "fresh",
+    "assigned_visual_theme": "human_body_medicine",
+    "total_cards": 8
+  },
+  "journey_deck": [
+    {
+      "card_id": "c1",
+      "type": "concept_card",
+      "act_title": "The Puzzle",
+      "heading": "The Holiday Paradox",
+      "body_markdown": [
+        "Here's something almost everyone notices: a two-week trip somewhere unfamiliar can feel like it drags on forever while you're living it, day by day. But a year later, looking back, that same two weeks feels shorter in memory than the two weeks you spent doing your ordinary routine at home.",
+        "Psychologists call this the **holiday paradox**: time can feel slow while it's happening and fast in hindsight, at the very same time."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "quizzical" }
+    },
+    {
+      "card_id": "c2",
+      "type": "concept_card",
+      "act_title": "The Mechanism",
+      "heading": "Two clocks, not one",
+      "body_markdown": [
+        "Your brain actually runs two separate systems for judging time. One tracks time as it passes, moment to moment. The other reconstructs how much time passed after the fact, by counting how much happened.",
+        "The speeding-up feeling almost everyone reports after childhood is mostly a problem with that second clock, the memory-based one, not the first."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "c3",
+      "type": "predict_card",
+      "heading": "A year from now, which two weeks will feel longer when you look back: two weeks in a new city trying new things, or two weeks of your normal routine at home?",
+      "options": [
+        { "id": "a", "label": "The new city, in memory", "is_correct": true },
+        { "id": "b", "label": "The ordinary routine, in memory", "is_correct": false },
+        { "id": "c", "label": "They'll feel about the same", "is_correct": false }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "wide_eyed",
+        "feedback_text": "The new city wins, and it's not close. Both weeks lasted exactly 336 hours, but your brain doesn't measure duration with a clock in hindsight, it measures it by counting distinct memories, and a week of firsts leaves far more of them behind."
+      }
+    },
+    {
+      "card_id": "c4",
+      "type": "concept_card",
+      "act_title": "Theory One",
+      "heading": "Your brain counts memories, not minutes",
+      "body_markdown": [
+        "When you're in a new place doing new things, your brain lays down a dense trail of distinct memories: the smell of the market, the wrong turn down an alley, the strange breakfast. Each one is a separate marker.",
+        "Routine days barely get marked at all. If you drove the same commute and ate the same lunch as last Tuesday, your brain often doesn't bother storing a fresh memory, it just reuses the old one.",
+        "Looking back later, you judge duration by counting markers. **More markers reads as more time**, even though the clock on the wall ran identically both weeks."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "c5",
+      "type": "concept_card",
+      "act_title": "Theory Two",
+      "heading": "The shrinking-fraction problem",
+      "body_markdown": [
+        "There's a second, purely mathematical reason time seems to accelerate with age. To a 5-year-old, one year is 20 percent of their entire life, an enormous chunk. To a 50-year-old, one year is just 2 percent of their life.",
+        "Each successive year is a smaller slice of the total you have to compare it against, so it registers as passing faster, even if nothing about how it's lived changes."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
+    },
+    {
+      "card_id": "c6",
+      "type": "checkpoint_card",
+      "heading": "Why does a routine week feel like it vanished when you look back on it a year later?",
+      "options": [
+        { "id": "a", "label": "Your brain stored very few distinct new memories to mark it by", "is_correct": true },
+        { "id": "b", "label": "The week itself was objectively shorter", "is_correct": false }
+      ],
+      "correct_feedback": "Exactly. The week wasn't shorter, but you left almost no distinct memory markers behind, so in hindsight there's less material to measure it by.",
+      "incorrect_feedback": "Not quite, the clock ran the same length either way. What differs is how many distinct memories got stored. A routine week gives your memory almost nothing new to hold onto, so later it feels like it barely happened."
+    },
+    {
+      "card_id": "c7",
+      "type": "sit_with_it_card",
+      "heading": "So which theory is actually right?",
+      "perspective_left": {
+        "title": "The math camp",
+        "summary": "Some researchers argue the shrinking-fraction effect is the primary driver, because it explains why the acceleration is so consistent and near-universal across cultures and personalities, independent of how eventful a life is. Even people who fill their years with novelty and travel still report time speeding up as they age, which a pure memory-density account struggles to explain on its own."
+      },
+      "perspective_right": {
+        "title": "The memory camp",
+        "summary": "Other researchers point out that the proportional-math theory can't explain the holiday paradox itself, why a week feels slow while you're in it but fast in memory, or why people consistently report their most eventful years, a first job, a move, having a child, as the ones that feel longest in retrospect, regardless of what age they happened at."
+      },
+      "synthesis_payload": "Most memory researchers today think both mechanisms are real and operating on different timescales: the proportional math shapes the big, multi-year sense of acceleration, while memory density explains the smaller week-to-week and year-to-year swings. But there's no settled consensus on which one dominates, or whether a full account of subjective time needs a third mechanism nobody has pinned down yet."
+    },
+    {
+      "card_id": "c8",
+      "type": "concept_card",
+      "act_title": "The Reframe",
+      "heading": "The lever you actually have",
+      "body_markdown": [
+        "You can't slow the calendar and you can't undo the arithmetic of your age. But you can control how many new, distinct memories a given stretch of time generates.",
+        "This is why deliberately breaking routine, new places, new skills, new people, is the one intervention that reliably makes years feel longer in retrospect. **Novelty is the closest thing to a dial on subjective time.**"
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "encouraging" }
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence, explain to a friend why their childhood summers felt endless but last year feels like it vanished.",
+    "mint_card": {
+      "title": "Why Time Speeds Up",
+      "category": "Memory & Perception",
+      "shareable_synthesis": "Time doesn't actually speed up, your brain just runs out of new things to measure it by, and every year becomes a smaller slice of a life that keeps getting longer."
+    }
+  }
+}

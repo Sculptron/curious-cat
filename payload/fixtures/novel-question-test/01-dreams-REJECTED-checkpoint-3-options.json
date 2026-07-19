@@ -1,0 +1,80 @@
+{
+  "expedition_metadata": {
+    "user_query": "Why do we dream?",
+    "calibration_level": "mid",
+    "assigned_visual_theme": "human_body_medicine",
+    "total_cards": 5
+  },
+  "journey_deck": [
+    {
+      "card_id": "concept_1",
+      "type": "concept_card",
+      "act_title": "The Brain Doesn't Turn Off",
+      "heading": "Dreaming happens in an active brain, not a quiet one",
+      "body_markdown": [
+        "Roughly every 90 minutes you drop into REM sleep, the stage where most vivid dreaming happens. Brain scans show your limbic system, the amygdala and hippocampus, the parts that handle emotion and memory, firing about as hard as it does when you're awake.",
+        "At the same time your dorsolateral prefrontal cortex, the region that handles logic, planning, and second-guessing, goes quiet. That's the mechanism behind two dream hallmarks: they feel intensely emotional, and you rarely question the nonsense while it's happening. **A high-emotion, low-logic brain is what a dream actually is.**"
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "concept_2",
+      "type": "concept_card",
+      "act_title": "Three Camps, One Unanswered Question",
+      "heading": "Neuroscience has theories, not a verdict",
+      "body_markdown": [
+        "Once you know REM looks like that, the real question is why the brain bothers doing it at all. Serious camps have argued this for decades, and none has won yet.",
+        "One camp says dreaming is functional: it consolidates memory, rehearses threats, or processes emotion overnight. The other says it's a byproduct: the brainstem fires largely random signals during REM, and the cortex, a compulsive pattern-finder, stitches a story out of the noise after the fact. **Same biology, opposite conclusions.**"
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
+    },
+    {
+      "card_id": "predict_1",
+      "type": "predict_card",
+      "heading": "Guess before the reveal: in sleep-lab studies, what fraction of dream content involves being chased, attacked, or falling?",
+      "options": [
+        { "id": "a", "label": "About 10%, dreams mostly replay ordinary parts of the day", "is_correct": false },
+        { "id": "b", "label": "About 20-30%, roughly matching normal daytime stress levels", "is_correct": false },
+        { "id": "c", "label": "Over 60%, far more than waking life would predict", "is_correct": true }
+      ],
+      "reveal_payload": {
+        "mascot_reaction_mood": "wide_eyed",
+        "feedback_text": "Over 60% is right. Across cultures, and even in children who haven't personally lived through most of these threats, dream content skews heavily toward danger. That lopsided ratio is the strongest single piece of evidence for the **threat simulation theory**: dreaming might be a low-cost rehearsal for danger, not a random rerun of your day."
+      }
+    },
+    {
+      "card_id": "sit_with_it_1",
+      "type": "sit_with_it_card",
+      "heading": "Two real camps, no resolution",
+      "perspective_left": {
+        "title": "Dreaming does a job",
+        "summary": "Researchers like Antti Revonsuo (threat simulation) and Matthew Walker (memory and emotional processing) argue dreaming is functional: it rehearses danger, consolidates new memories overnight, and helps regulate emotion. Evidence includes the threat-heavy dream content above, and studies where REM-deprived people show measurably worse next-day memory and mood."
+      },
+      "perspective_right": {
+        "title": "Dreaming is a side effect",
+        "summary": "Others, following J. Allan Hobson and Robert McCarley's activation-synthesis hypothesis, argue the brainstem fires largely random signals during REM sleep, and the cortex's job is simply to narrate whatever it receives. On this view, the meaning in a dream is imposed after the fact, not built in on purpose."
+      },
+      "synthesis_payload": "Both camps agree on the biology, what's firing and when. They disagree on whether the brain is using that activity for something or just cleaning up after it. **No experiment so far has settled which one is true, and researchers who've spent careers on this still land on opposite sides.**"
+    },
+    {
+      "card_id": "checkpoint_1",
+      "type": "checkpoint_card",
+      "heading": "Which detail is evidence for the 'dreaming does a job' camp specifically?",
+      "options": [
+        { "id": "a", "label": "Dreams feel illogical and are hard to remember", "is_correct": false },
+        { "id": "b", "label": "People deprived of REM sleep show worse memory and mood the next day", "is_correct": true },
+        { "id": "c", "label": "The brainstem fires signals during REM sleep", "is_correct": false }
+      ],
+      "correct_feedback": "Right. If dreaming were purely random noise with no function, losing it shouldn't cost you anything the next day. The fact that it does is the functional camp's strongest card.",
+      "incorrect_feedback": "Close, but that detail is shared ground, both camps agree the brainstem fires during REM. The evidence that actually favors 'dreaming does a job' is what happens when you lose it: REM-deprived people show measurably worse memory and mood the next day."
+    }
+  ],
+  "payoff_layer": {
+    "explain_it_back_prompt": "In one sentence, explain to someone why scientists still can't agree on why we dream.",
+    "mint_card": {
+      "title": "Why We Dream",
+      "category": "Neuroscience",
+      "shareable_synthesis": "**Nobody knows for certain why we dream** - the leading scientists split between 'it does a job' and 'it's a side effect,' and decades of brain scans haven't picked a winner."
+    }
+  }
+}

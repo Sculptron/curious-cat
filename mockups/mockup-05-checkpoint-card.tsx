@@ -219,6 +219,12 @@ export default function CheckpointCardMockup() {
                     )}
                   </div>
                   
+                  {/* Optional emoji — slot collapses entirely when the payload omits it
+                      (abstract options get no icon rather than a weak match or placeholder) */}
+                  {option.emoji && (
+                    <span className="text-xl leading-none mt-0.5 flex-shrink-0">{option.emoji}</span>
+                  )}
+
                   {/* Option Text */}
                   <span className={`text-[15px] leading-relaxed transition-colors ${textClass}`}>
                     {option.text}

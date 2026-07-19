@@ -64,6 +64,15 @@ function checkOptions(card, path, { min, max, feedbackPerOption = false }) {
     req(o, `${path}.options[${i}]`, "label", "string");
     if (typeof o.is_correct !== "boolean") errors.push(`${path}.options[${i}].is_correct: missing or not boolean`);
     if (o.is_correct === true) correct++;
+    // emoji is optional (Strategist ruling: omit rather than force weak matches).
+    // Absent or null is fine; if present it must be one emoji, not text or several.
+    if (o.emoji !== undefined && o.emoji !== null) {
+      if (typeof o.emoji !== "string" || o.emoji.length === 0) {
+        errors.push(`${path}.options[${i}].emoji: must be a non-empty string or omitted`);
+      } else if ([...new Intl.Segmenter().segment(o.emoji)].length > 1 || /^[\x00-\x7F]+$/.test(o.emoji)) {
+        errors.push(`${path}.options[${i}].emoji: "${o.emoji}" is not a single emoji character`);
+      }
+    }
   });
   if (correct !== 1) errors.push(`${path}.options: exactly one option must have is_correct=true, found ${correct}`);
 }

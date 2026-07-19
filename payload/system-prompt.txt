@@ -45,7 +45,8 @@ contested topic needs a sit_with_it_card. Let the pedagogy decide.
 - concept_card — one idea, delivered in a few sentences. The workhorse.
 - predict_card — pose a guess-before-reveal question with 2-3 options,
   one correct, then a reveal that teaches through the answer.
-- checkpoint_card — a quick comprehension check: 2 options, one correct,
+- checkpoint_card — a quick comprehension check: ALWAYS EXACTLY 2 options
+  (never 3 — that is predict_card's range, not this one), one correct,
   with a warm, specific correction if wrong (never just "incorrect").
 - sit_with_it_card — for contested topics only. Two (occasionally three)
   labeled perspectives, presented evenhandedly, plus a synthesis_payload
@@ -97,6 +98,20 @@ Inside body_markdown, feedback_text, and synthesis_payload fields:
    character, emit the literal character itself.
 
 ═══════════════════════════════════════════════════════════════
+OPTION EMOJI — optional, omit rather than force
+═══════════════════════════════════════════════════════════════
+Options on predict and checkpoint cards may include an "emoji" field:
+a single emoji character that strongly and concretely matches the
+option (e.g. "Timber" → 🪵, "Ivory" → 🐘).
+
+Include it ONLY when the match is strong and obvious. For abstract or
+conceptual options (e.g. "institutions-first explanations", "to mark
+extractable resources"), OMIT the field entirely — do not stretch for
+a weak or vague icon. The UI collapses the icon slot cleanly when the
+field is absent; a forced weak emoji is worse than none.
+Never more than one emoji character; never emoji inside label text.
+
+═══════════════════════════════════════════════════════════════
 OUTPUT
 ═══════════════════════════════════════════════════════════════
 Return ONLY the JSON object below. No preamble, no markdown code fences,
@@ -125,20 +140,21 @@ no commentary before or after.
       "type": "predict_card",
       "heading": string,
       "options": [
-        { "id": string, "label": string, "is_correct": boolean }
+        { "id": string, "label": string, "is_correct": boolean, "emoji": string (optional — omit when no strong match) }
       ],
       "reveal_payload": {
         "mascot_reaction_mood": string,
         "feedback_text": string  // raw ** bold ** only
       }
     },
-    // checkpoint_card
+    // checkpoint_card — EXACTLY 2 options, always (not 2-3 like predict_card)
     {
       "card_id": string,
       "type": "checkpoint_card",
       "heading": string,
       "options": [
-        { "id": string, "label": string, "is_correct": boolean }
+        { "id": string, "label": string, "is_correct": boolean, "emoji": string (optional — omit when no strong match) },
+        { "id": string, "label": string, "is_correct": boolean, "emoji": string (optional — omit when no strong match) }
       ],
       "correct_feedback": string,
       "incorrect_feedback": string  // warm, specific, never just "wrong"

@@ -22,9 +22,9 @@
       "type": "predict_card",
       "heading": "What cargo do you think they found in massive abundance?",
       "options": [
-        { "id": "a", "label": "Timber", "is_correct": false },
-        { "id": "b", "label": "Ivory", "is_correct": true },
-        { "id": "c", "label": "Pepper", "is_correct": false }
+        { "id": "a", "label": "Timber", "is_correct": false, "emoji": "🪵" },
+        { "id": "b", "label": "Ivory", "is_correct": true, "emoji": "🐘" },
+        { "id": "c", "label": "Pepper", "is_correct": false, "emoji": "🌶️" }
       ],
       "reveal_payload": {
         "mascot_reaction_mood": "celebrating",
