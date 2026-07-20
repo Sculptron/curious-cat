@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-serif-display: 'Lora', Georgia, serif;
+  --font-sans-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --color-paper: #F9F6F0;
+  --color-paper-warm: #FCFAF7;
+  --color-charcoal: #1A1A1A;
+  --color-explorer-amber: #D97706;
+  --color-nautical-teal: #0D9488;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans-body);
+  background: var(--color-charcoal);
+}
+
+.serif-header {
+  font-family: var(--font-serif-display);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.lined-paper {
+  background-color: #FFFBEB;
+  background-image: repeating-linear-gradient(transparent, transparent 27px, #E5E7EB 28px);
+  background-attachment: local;
+}
+
+.crate-texture {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 0, 0, 0.05) 10px,
+    rgba(0, 0, 0, 0.05) 11px
+  );
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.float-anim {
+  animation: float 6s ease-in-out infinite;
+}
+
+.holo-glare {
+  background: radial-gradient(
+    circle at var(--glare-x) var(--glare-y),
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 215, 0, 0.3) 20%,
+    rgba(255, 0, 128, 0.2) 40%,
+    transparent 60%
+  );
+  mix-blend-mode: color-dodge;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.holo-foil {
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(217, 119, 6, 0.4) 30%,
+    rgba(16, 185, 129, 0.4) 40%,
+    rgba(59, 130, 246, 0.4) 50%,
+    transparent 60%
+  );
+  background-size: 200% 200%;
+  background-position: var(--glare-x) var(--glare-y);
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+@keyframes drawLine {
+  0% { stroke-dashoffset: 100; opacity: 0; }
+  20% { opacity: 0.5; }
+  100% { stroke-dashoffset: 0; opacity: 0.3; }
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+.line-draw {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawLine 4s ease-out forwards;
+}
+.star-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
