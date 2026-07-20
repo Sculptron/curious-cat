@@ -1,0 +1,37 @@
+{
+  "_status": "FINAL — sourced directly from committed assets, not a written spec. semantic_theme_enum values are the 15 folder names under assets/themes/; mascot_mood_enum values are the mood tokens in the 7 committed assets/mascot/cat_<mood>.svg files. Supersedes enums.draft.json, which was written before the real asset-generation pass and never reconciled against it (see payload/README.md for the diff).",
+
+  "semantic_theme_enum": {
+    "_note": "One value per assets/themes/<theme_id>/ folder (15 total, within the blueprint's 12-15 range). Renamed/regrouped relative to the old draft list during real asset generation; draft values like maritime_trade, human_body_medicine, colonial_cartography no longer exist as asset sets.",
+    "values": [
+      "abstract_philosophy",
+      "ancient_civilizations",
+      "art_culture_music",
+      "biology_ecosystems",
+      "chemistry_materials",
+      "earth_geology",
+      "economics_markets",
+      "geopolitics_borders",
+      "heavy_industry_mining",
+      "infrastructure_urbanism",
+      "maritime_history",
+      "modern_computing_silicon",
+      "physics_energy",
+      "psychology_neuroscience",
+      "space_astrophysics"
+    ]
+  },
+
+  "mascot_mood_enum": {
+    "_note": "One value per assets/mascot/cat_<mood>.svg file (7 total). Replaces the draft's wide_eyed/quizzical, which have no asset — the real library shipped mind_blown and navigating instead.",
+    "values": [
+      "neutral",
+      "happy",
+      "celebrating",
+      "encouraging",
+      "thinking",
+      "mind_blown",
+      "navigating"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_status": "FINAL — real committed file paths, verified to exist on disk. Paths are relative to the repo root. Keys are exactly the mascot_mood_enum values in enums.json.",
+  "neutral": "assets/mascot/cat_neutral.svg",
+  "happy": "assets/mascot/cat_happy.svg",
+  "celebrating": "assets/mascot/cat_celebrating.svg",
+  "encouraging": "assets/mascot/cat_encouraging.svg",
+  "thinking": "assets/mascot/cat_thinking.svg",
+  "mind_blown": "assets/mascot/cat_mind_blown.svg",
+  "navigating": "assets/mascot/cat_navigating.svg"
+}

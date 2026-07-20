@@ -6,7 +6,7 @@
 
 import { readFileSync } from "node:fs";
 
-const enums = JSON.parse(readFileSync(new URL("./enums.draft.json", import.meta.url), "utf8"));
+const enums = JSON.parse(readFileSync(new URL("./enums.json", import.meta.url), "utf8"));
 const THEMES = enums.semantic_theme_enum.values;
 const MOODS = enums.mascot_mood_enum.values;
 const CALIBRATIONS = ["fresh", "mid", "deep"];

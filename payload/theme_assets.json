@@ -1,0 +1,66 @@
+{
+  "_status": "FINAL — real committed file paths, verified to exist on disk (not a spec proposal). Paths are relative to the repo root.",
+  "_note": "heavy_industry_mining has three files on disk: two hero candidates plus one interaction image. \"heavy_industry_mining_hero_visual.png\" (no suffix) has a defective white/blank band across the bottom third that breaks bottom-bleed masking against UI chrome — every other theme's hero darkens toward the bottom instead. \"heavy_industry_mining_hero_visual (1).png\" matches that pattern and is used as the keeper below. The defective file is left on disk, untouched, in case this call needs revisiting.",
+
+  "abstract_philosophy": {
+    "hero": "assets/themes/abstract_philosophy/abstract_philosophy_hero_canvas.png",
+    "interact": "assets/themes/abstract_philosophy/abstract_philosophy_interact_canvas.png"
+  },
+  "ancient_civilizations": {
+    "hero": "assets/themes/ancient_civilizations/ancient_civilizations_hero_canvas.png",
+    "interact": "assets/themes/ancient_civilizations/ancient_civilizations_interact_canvas.png"
+  },
+  "art_culture_music": {
+    "hero": "assets/themes/art_culture_music/art_culture_music_hero_canvas.png",
+    "interact": "assets/themes/art_culture_music/art_culture_music_interact_canvas.png"
+  },
+  "biology_ecosystems": {
+    "hero": "assets/themes/biology_ecosystems/biology_ecosystems_hero_visual.png",
+    "interact": "assets/themes/biology_ecosystems/biology_ecosystems_interact_visual.png"
+  },
+  "chemistry_materials": {
+    "hero": "assets/themes/chemistry_materials/chemistry_materials_hero_canvas.png",
+    "interact": "assets/themes/chemistry_materials/chemistry_materials_interact_canvas.png"
+  },
+  "earth_geology": {
+    "hero": "assets/themes/earth_geology/earth_geology_hero_canvas.png",
+    "interact": "assets/themes/earth_geology/earth_geology_interact_canvas.png"
+  },
+  "economics_markets": {
+    "hero": "assets/themes/economics_markets/economics_markets_hero_canvas.png",
+    "interact": "assets/themes/economics_markets/economics_markets_interact_canvas.png"
+  },
+  "geopolitics_borders": {
+    "hero": "assets/themes/geopolitics_borders/geopolitics_borders_hero_canvas.png",
+    "interact": "assets/themes/geopolitics_borders/geopolitics_borders_interact_canvas.png"
+  },
+  "heavy_industry_mining": {
+    "hero": "assets/themes/heavy_industry_mining/heavy_industry_mining_hero_visual (1).png",
+    "interact": "assets/themes/heavy_industry_mining/heavy_industry_mining_interact_visual.png",
+    "_rejected_hero_candidate": "assets/themes/heavy_industry_mining/heavy_industry_mining_hero_visual.png"
+  },
+  "infrastructure_urbanism": {
+    "hero": "assets/themes/infrastructure_urbanism/infrastructure_urbanism_hero_canvas.png",
+    "interact": "assets/themes/infrastructure_urbanism/infrastructure_urbanism_interact_canvas.png"
+  },
+  "maritime_history": {
+    "hero": "assets/themes/maritime_history/maritime_history_hero_visual.png",
+    "interact": "assets/themes/maritime_history/maritime_history_interact_visual.png"
+  },
+  "modern_computing_silicon": {
+    "hero": "assets/themes/modern_computing_silicon/modern_computing_silicon_hero_visual.png",
+    "interact": "assets/themes/modern_computing_silicon/modern_computing_silicon_interact_visual.png"
+  },
+  "physics_energy": {
+    "hero": "assets/themes/physics_energy/physics_energy_hero_canvas.png",
+    "interact": "assets/themes/physics_energy/physics_energy_interact_canvas.png"
+  },
+  "psychology_neuroscience": {
+    "hero": "assets/themes/psychology_neuroscience/psychology_neuroscience_hero_canvas.png",
+    "interact": "assets/themes/psychology_neuroscience/psychology_neuroscience_interact_canvas.png"
+  },
+  "space_astrophysics": {
+    "hero": "assets/themes/space_astrophysics/space_astrophysics_hero_visual.png",
+    "interact": "assets/themes/space_astrophysics/space_astrophysics_interact_visual.png"
+  }
+}
