@@ -1,0 +1,561 @@
+{
+  "startedAt": "2026-07-20T21:05:01.818Z",
+  "finishedAt": "2026-07-20T21:11:07.999Z",
+  "total": 30,
+  "passedFirstTry": 22,
+  "passedOnRetry": 8,
+  "failedAfterAllRetries": 0,
+  "firstAttemptRejections": 8,
+  "results": [
+    {
+      "q": "why does soda go flat",
+      "cal": "novice",
+      "tag": "uncontested-mechanical",
+      "index": 0,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "chemistry_materials",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "how do vaccines cause immunity",
+      "cal": "seeker",
+      "tag": "uncontested-mechanical",
+      "index": 1,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "biology_ecosystems",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why is the sky blue",
+      "cal": "adept",
+      "tag": "uncontested-mechanical",
+      "index": 2,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "physics_energy",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "how do noise-cancelling headphones work",
+      "cal": "novice",
+      "tag": "uncontested-technical",
+      "index": 3,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: journey_deck[2].options[1].is_correct: missing or not boolean"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "physics_energy",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why is yawning contagious",
+      "cal": "seeker",
+      "tag": "adversarial: mild scientific uncertainty (mirror-neuron/empathy theory vs alternatives) — should NOT trigger sit_with_it_card",
+      "index": 4,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why did the Roman Empire fall",
+      "cal": "adept",
+      "tag": "adversarial: classic multi-cause historical debate",
+      "index": 5,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "ancient_civilizations",
+      "totalCards": 8,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "does raising the minimum wage cause unemployment",
+      "cal": "novice",
+      "tag": "adversarial: real contested economics debate",
+      "index": 6,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: expedition_metadata.total_cards (6) != journey_deck length (5)"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "economics_markets",
+      "totalCards": 5,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "is nuclear power safe",
+      "cal": "seeker",
+      "tag": "adversarial: politically charged, false-balance risk",
+      "index": 7,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: expedition_metadata.total_cards (8) != journey_deck length (7)"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "physics_energy",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "what causes economic recessions",
+      "cal": "adept",
+      "tag": "adversarial: contested economics (Keynesian vs monetarist vs real-business-cycle)",
+      "index": 8,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "economics_markets",
+      "totalCards": 6,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "is free will real",
+      "cal": "novice",
+      "tag": "adversarial: abstract philosophical debate, emoji-omission stress test",
+      "index": 9,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "abstract_philosophy",
+      "totalCards": 6,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "what is consciousness",
+      "cal": "seeker",
+      "tag": "abstract-genuinely-mysterious-not-policy-contested",
+      "index": 10,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 6,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why does time feel like it speeds up as we age",
+      "cal": "adept",
+      "tag": "repeat-of-known-fixture (consistency check against prior novel-question test)",
+      "index": 11,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: expedition_metadata.total_cards (8) != journey_deck length (7)"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "is math discovered or invented",
+      "cal": "novice",
+      "tag": "adversarial: genuinely disputed among philosophers/mathematicians",
+      "index": 12,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "abstract_philosophy",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "is a virus alive or not alive",
+      "cal": "seeker",
+      "tag": "adversarial: real edge-case biology debate",
+      "index": 13,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "biology_ecosystems",
+      "totalCards": 6,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why do we dream",
+      "cal": "adept",
+      "tag": "adversarial: multiple competing scientific theories, none proven",
+      "index": 14,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: journey_deck[2].options[0].is_correct: missing or not boolean\nREJECT: journey_deck[2].options[1].is_correct: missing or not boolean\nREJECT: journey_deck[2].options[2].is_correct: missing or not boolean\nREJECT: journey_deck[2].options: exactly one option must have is_correct=true, found 0\nREJECT: journey_deck[4].options[0].is_correct: missing or not boolean\nREJECT: journey_deck[4].options[1].is_correct: missing or not boolean\nREJECT: journey_deck[4].options: exactly one option must have is_correct=true, found 0"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "how does encryption keep data private",
+      "cal": "novice",
+      "tag": "technical",
+      "index": 15,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: journey_deck[2].options[0].is_correct: missing or not boolean\nREJECT: journey_deck[2].options[1].is_correct: missing or not boolean\nREJECT: journey_deck[2].options[2].is_correct: missing or not boolean\nREJECT: journey_deck[2].options: exactly one option must have is_correct=true, found 0\nREJECT: journey_deck[4].options[0].is_correct: missing or not boolean\nREJECT: journey_deck[4].options[1].is_correct: missing or not boolean\nREJECT: journey_deck[4].options: exactly one option must have is_correct=true, found 0"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "modern_computing_silicon",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why do batteries degrade over time",
+      "cal": "seeker",
+      "tag": "technical",
+      "index": 16,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "chemistry_materials",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "how does GPS calculate your location",
+      "cal": "adept",
+      "tag": "technical",
+      "index": 17,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "space_astrophysics",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why is compound interest so powerful",
+      "cal": "novice",
+      "tag": "technical-numeric",
+      "index": 18,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "economics_markets",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "how do neural networks learn",
+      "cal": "seeker",
+      "tag": "technical",
+      "index": 19,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: journey_deck[2].options[0].is_correct: missing or not boolean\nREJECT: journey_deck[2].options[1].is_correct: missing or not boolean\nREJECT: journey_deck[2].options[2].is_correct: missing or not boolean\nREJECT: journey_deck[2].options: exactly one option must have is_correct=true, found 0\nREJECT: journey_deck[5].options[0].is_correct: missing or not boolean\nREJECT: journey_deck[5].options[1].is_correct: missing or not boolean\nREJECT: journey_deck[5].options: exactly one option must have is_correct=true, found 0"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "modern_computing_silicon",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why did the Berlin Wall fall",
+      "cal": "adept",
+      "tag": "historical",
+      "index": 20,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "geopolitics_borders",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "how did the printing press change society",
+      "cal": "novice",
+      "tag": "historical",
+      "index": 21,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: expedition_metadata.total_cards (7) != journey_deck length (6)"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "art_culture_music",
+      "totalCards": 6,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why did Japan close itself off during the Edo period",
+      "cal": "seeker",
+      "tag": "historical",
+      "index": 22,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "geopolitics_borders",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "what caused World War 1",
+      "cal": "adept",
+      "tag": "adversarial: classic multi-cause historical debate",
+      "index": 23,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "geopolitics_borders",
+      "totalCards": 6,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why did the Soviet Union collapse",
+      "cal": "novice",
+      "tag": "adversarial: historians still disagree on the primary cause",
+      "index": 24,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "geopolitics_borders",
+      "totalCards": 8,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why does popcorn pop",
+      "cal": "seeker",
+      "tag": "pop-science",
+      "index": 25,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "physics_energy",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why do onions make you cry",
+      "cal": "adept",
+      "tag": "pop-science",
+      "index": 26,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "chemistry_materials",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why does coffee make you need to pee",
+      "cal": "novice",
+      "tag": "pop-science",
+      "index": 27,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "biology_ecosystems",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why do cats purr",
+      "cal": "seeker",
+      "tag": "adversarial: mechanism/purpose still debated among biologists",
+      "index": 28,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "biology_ecosystems",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why does music give people chills",
+      "cal": "adept",
+      "tag": "pop-science-neuroscience",
+      "index": 29,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    }
+  ]
+}

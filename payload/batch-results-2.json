@@ -1,0 +1,358 @@
+{
+  "startedAt": "2026-07-20T21:21:09.532Z",
+  "finishedAt": "2026-07-20T21:24:43.565Z",
+  "total": 20,
+  "passedFirstTry": 19,
+  "passedOnRetry": 1,
+  "failedAfterAllRetries": 0,
+  "firstAttemptRejections": 1,
+  "results": [
+    {
+      "q": "how do noise-cancelling headphones work",
+      "cal": "novice",
+      "tag": "retest: baseline failure (missing is_correct)",
+      "index": 0,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "physics_energy",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "does raising the minimum wage cause unemployment",
+      "cal": "novice",
+      "tag": "retest: baseline failure (total_cards mismatch)",
+      "index": 1,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "economics_markets",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "is nuclear power safe",
+      "cal": "seeker",
+      "tag": "retest: baseline failure (total_cards mismatch)",
+      "index": 2,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "physics_energy",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why does time feel like it speeds up as we age",
+      "cal": "adept",
+      "tag": "retest: baseline failure (total_cards mismatch)",
+      "index": 3,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why do we dream",
+      "cal": "adept",
+      "tag": "retest: baseline failure (missing is_correct)",
+      "index": 4,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 6,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "how does encryption keep data private",
+      "cal": "novice",
+      "tag": "retest: baseline failure (missing is_correct)",
+      "index": 5,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "modern_computing_silicon",
+      "totalCards": 8,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "how do neural networks learn",
+      "cal": "seeker",
+      "tag": "retest: baseline failure (missing is_correct)",
+      "index": 6,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "modern_computing_silicon",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "how did the printing press change society",
+      "cal": "novice",
+      "tag": "retest: baseline failure (total_cards mismatch)",
+      "index": 7,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "art_culture_music",
+      "totalCards": 8,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why do we get brain freeze from eating ice cream too fast",
+      "cal": "novice",
+      "tag": "uncontested-mechanical",
+      "index": 8,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why does glass shatter into sharp pieces instead of crumbling",
+      "cal": "seeker",
+      "tag": "uncontested-technical",
+      "index": 9,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "chemistry_materials",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "is intelligence mostly genetic or mostly environment",
+      "cal": "adept",
+      "tag": "adversarial: nature-vs-nurture debate",
+      "index": 10,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 8,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why do leaves change color in autumn",
+      "cal": "novice",
+      "tag": "uncontested-mechanical",
+      "index": 11,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "biology_ecosystems",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why did the Roman Republic turn into an empire",
+      "cal": "seeker",
+      "tag": "adversarial: multi-cause historical debate",
+      "index": 12,
+      "success": true,
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "reasons": "REJECT: journey_deck[1].options: exactly one option must have is_correct=true, found 0"
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "theme": "ancient_civilizations",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "does social media cause depression in teenagers",
+      "cal": "adept",
+      "tag": "adversarial: genuinely contested research area",
+      "index": 13,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "psychology_neuroscience",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why does helium make your voice sound funny",
+      "cal": "novice",
+      "tag": "pop-science",
+      "index": 14,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "physics_energy",
+      "totalCards": 6,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "how do black holes form",
+      "cal": "seeker",
+      "tag": "technical",
+      "index": 15,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "space_astrophysics",
+      "totalCards": 7,
+      "usedSitWithIt": false
+    },
+    {
+      "q": "why do some civilizations collapse suddenly",
+      "cal": "adept",
+      "tag": "adversarial: contested (environmental vs political vs multi-causal theories)",
+      "index": 16,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "ancient_civilizations",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why do we get goosebumps",
+      "cal": "novice",
+      "tag": "pop-science",
+      "index": 17,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "apiError": "529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CdE1mP1XfhrBNrCmHpBxs\"}"
+        }
+      ],
+      "fatalApiError": true,
+      "theme": "biology_ecosystems",
+      "totalCards": 7,
+      "usedSitWithIt": false,
+      "note": "Original run hit a transient 529 overloaded_error from the API (not a content/schema failure) and my batch script gives up immediately on API-level errors instead of retrying, unlike genuine validation rejections. Re-ran standalone after the transient condition cleared; passed clean on attempt 1. This is a real gap in batch-test-2.mjs worth fixing before the next large batch, not something to paper over."
+    },
+    {
+      "q": "is artificial intelligence conscious",
+      "cal": "seeker",
+      "tag": "adversarial: genuinely open philosophical/scientific question",
+      "index": 18,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "abstract_philosophy",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    },
+    {
+      "q": "why does inflation happen",
+      "cal": "adept",
+      "tag": "technical-economics",
+      "index": 19,
+      "success": true,
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        }
+      ],
+      "theme": "economics_markets",
+      "totalCards": 7,
+      "usedSitWithIt": true
+    }
+  ]
+}

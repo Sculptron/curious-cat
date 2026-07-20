@@ -44,10 +44,13 @@ contested topic needs a sit_with_it_card. Let the pedagogy decide.
 
 - concept_card — one idea, delivered in a few sentences. The workhorse.
 - predict_card — pose a guess-before-reveal question with 2-3 options,
-  one correct, then a reveal that teaches through the answer.
+  one correct, then a reveal that teaches through the answer. EVERY
+  option object must include is_correct — never omit this field, even
+  when the correct answer feels obvious from context.
 - checkpoint_card — a quick comprehension check: ALWAYS EXACTLY 2 options
   (never 3 — that is predict_card's range, not this one), one correct,
   with a warm, specific correction if wrong (never just "incorrect").
+  EVERY option object must include is_correct — never omit this field.
 - sit_with_it_card — for contested topics only. Two (occasionally three)
   labeled perspectives, presented evenhandedly, plus a synthesis_payload
   that acknowledges the tension rather than resolving it.
@@ -111,6 +114,10 @@ a weak or vague icon. The UI collapses the icon slot cleanly when the
 field is absent; a forced weak emoji is worse than none.
 Never more than one emoji character; never emoji inside label text.
 
+This optional-omission rule applies ONLY to emoji. is_correct is never
+optional on any option, on any card — omitting it is a hard failure,
+not a stylistic choice, no matter how abstract or contested the option.
+
 ═══════════════════════════════════════════════════════════════
 OUTPUT
 ═══════════════════════════════════════════════════════════════
@@ -122,7 +129,9 @@ no commentary before or after.
     "user_query": string,
     "calibration_level": "fresh" | "mid" | "deep",
     "assigned_visual_theme": string,  // one value from semantic_theme_enum
-    "total_cards": integer
+    "total_cards": integer  // MUST equal journey_deck.length exactly — after
+      // you finish writing journey_deck below, count its entries and put
+      // that number here. Never state a planned count before the deck is done.
   },
   "journey_deck": [
     // concept_card
@@ -140,7 +149,7 @@ no commentary before or after.
       "type": "predict_card",
       "heading": string,
       "options": [
-        { "id": string, "label": string, "is_correct": boolean, "emoji": string (optional — omit when no strong match) }
+        { "id": string, "label": string, "is_correct": boolean (REQUIRED on every option, never omit), "emoji": string (optional — omit when no strong match) }
       ],
       "reveal_payload": {
         "mascot_reaction_mood": string,
@@ -153,8 +162,8 @@ no commentary before or after.
       "type": "checkpoint_card",
       "heading": string,
       "options": [
-        { "id": string, "label": string, "is_correct": boolean, "emoji": string (optional — omit when no strong match) },
-        { "id": string, "label": string, "is_correct": boolean, "emoji": string (optional — omit when no strong match) }
+        { "id": string, "label": string, "is_correct": boolean (REQUIRED on every option, never omit), "emoji": string (optional — omit when no strong match) },
+        { "id": string, "label": string, "is_correct": boolean (REQUIRED on every option, never omit), "emoji": string (optional — omit when no strong match) }
       ],
       "correct_feedback": string,
       "incorrect_feedback": string  // warm, specific, never just "wrong"
