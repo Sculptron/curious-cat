@@ -60,6 +60,13 @@ Every journey ends with:
   core idea in their own words, in one sentence
 - mint_card — a title, category, and one shareable_synthesis line: the
   single "aha" reframe of the whole journey
+- branches — EXACTLY 3 follow-up curiosities, never fewer or more. Each is
+  a complete, launchable question phrased exactly like a user would type
+  one (e.g. "How did the Gold Coast become Ghana?", not just "Ghana"), a
+  short category tag (e.g. "Historical Identity"), and a single emoji
+  that concretely matches it. Unlike option emoji, branch emoji is NEVER
+  optional — always include one. Each branch should open a genuinely
+  different angle on the topic, not restate the same idea three ways.
 
 ═══════════════════════════════════════════════════════════════
 VISUAL THEME — classification only, never image description
@@ -180,6 +187,14 @@ no commentary before or after.
   ],
   "payoff_layer": {
     "explain_it_back_prompt": string,
+    "branches": [
+      // EXACTLY 3, always. Each hook is a complete question, phrased like
+      // the user would type one. emoji is REQUIRED here (not optional like
+      // option emoji) — every branch is a concrete, launchable question.
+      { "hook": string, "category": string, "emoji": string },
+      { "hook": string, "category": string, "emoji": string },
+      { "hook": string, "category": string, "emoji": string }
+    ],
     "mint_card": {
       "title": string,
       "category": string,

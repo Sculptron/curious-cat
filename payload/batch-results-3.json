@@ -1,0 +1,221 @@
+{
+  "journey": {
+    "total": 10,
+    "passed": 10,
+    "branchCountAlways3": true,
+    "branchesAlwaysHaveEmoji": true,
+    "results": [
+      {
+        "q": "why do zebras have stripes",
+        "cal": "novice",
+        "index": 0,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "How do stripes actually confuse a fly's eyes and brain?",
+          "Why don't other African animals like antelope have stripes too?",
+          "Do zebra stripes work the same for every zebra species?"
+        ]
+      },
+      {
+        "q": "why does the moon look bigger near the horizon",
+        "cal": "seeker",
+        "index": 1,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "Why does the moon turn orange or red when it's low on the horizon?",
+          "Why does the setting Sun look squashed and oval near the horizon?",
+          "What makes optical illusions like the Ponzo illusion fool our brains?"
+        ]
+      },
+      {
+        "q": "is capitalism the best economic system",
+        "cal": "adept",
+        "index": 2,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "Why do the Nordic countries rank so high on happiness despite very high taxes?",
+          "What did Marx actually predict would happen to capitalism?",
+          "How does China's economy work if it's officially communist?"
+        ]
+      },
+      {
+        "q": "why do we get hiccups",
+        "cal": "novice",
+        "index": 3,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "Why do fetuses hiccup so much in the womb?",
+          "Do any other animals get hiccups?",
+          "Why do the home remedies for hiccups actually work?"
+        ]
+      },
+      {
+        "q": "why did ancient Egypt build pyramids",
+        "cal": "seeker",
+        "index": 4,
+        "success": true,
+        "attemptsUsed": 2,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "What were the Pyramid Texts and what spells did they contain?",
+          "Why did Egyptians stop building pyramids and switch to hidden tombs?",
+          "How did the annual Nile flood actually shape Egyptian society?"
+        ]
+      },
+      {
+        "q": "should college be free",
+        "cal": "adept",
+        "index": 5,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "Why is US student debt so much larger than in countries with free college?",
+          "Do college graduates actually earn enough more to justify the cost?",
+          "How does need-based financial aid decide who gets money?"
+        ]
+      },
+      {
+        "q": "why does bacon smell so good when cooking",
+        "cal": "novice",
+        "index": 6,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "Why does toast and seared steak smell good for the same reason bacon does?",
+          "How does my nose actually turn a floating molecule into a smell I recognize?",
+          "Why does the smell of bacon make me instantly hungry?"
+        ]
+      },
+      {
+        "q": "how do submarines control their depth",
+        "cal": "seeker",
+        "index": 7,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "How deep can a submarine go before the hull gets crushed?",
+          "How do submarines navigate when they can't use GPS underwater?",
+          "How does a fish control its depth without ballast tanks?"
+        ]
+      },
+      {
+        "q": "why do some languages have grammatical gender",
+        "cal": "adept",
+        "index": 8,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "How did English lose its grammatical gender?",
+          "Does a noun's gender actually change how speakers perceive that object?",
+          "How do Bantu languages manage 15+ noun classes without confusion?"
+        ]
+      },
+      {
+        "q": "why do we get déjà vu",
+        "cal": "novice",
+        "index": 9,
+        "success": true,
+        "attemptsUsed": 1,
+        "branchCount": 3,
+        "branchesHaveEmoji": true,
+        "branchHooks": [
+          "Why do we forget our dreams so quickly after waking up?",
+          "What is happening in the brain during a temporal-lobe seizure?",
+          "Why does a certain smell instantly bring back an old memory?"
+        ]
+      }
+    ]
+  },
+  "explainItBack": {
+    "total": 5,
+    "passed": 5,
+    "results": [
+      {
+        "q": "why do zebras have stripes",
+        "cal": "novice",
+        "synthesis": "Zebra stripes work like a group camouflage trick, confusing predators about where one zebra ends and the next begins in a moving herd.",
+        "explanation": "The stripes make it hard for lions to tell where one zebra stops and another starts when they're all running together.",
+        "expectedQuality": "strong",
+        "index": 0,
+        "success": true,
+        "attemptsUsed": 1,
+        "mascotReactionMood": "celebrating",
+        "headline": "You nailed the twist!",
+        "feedbackText": "Yes! You landed the exact insight that makes zebra stripes so clever: the camouflage isn't about hiding one zebra, it's about **blurring the whole herd into one confusing mass** so a lion can't lock onto a single target. The running-together part is what makes it work."
+      },
+      {
+        "q": "why do we get hiccups",
+        "cal": "novice",
+        "synthesis": "A hiccup is your diaphragm spasming involuntarily, then your vocal cords slamming shut right after, which makes the hic sound.",
+        "explanation": "I think it's just your stomach twitching randomly when you eat too fast.",
+        "expectedQuality": "off-target",
+        "index": 1,
+        "success": true,
+        "attemptsUsed": 1,
+        "mascotReactionMood": "encouraging",
+        "headline": "You caught the trigger!",
+        "feedbackText": "You nailed the eating-too-fast part, that really can set hiccups off! The twitch is actually happening a little higher up than your stomach though: it's your **diaphragm** spasming, and then your vocal cords snap shut right after, which makes that classic hic sound."
+      },
+      {
+        "q": "why did ancient Egypt build pyramids",
+        "cal": "seeker",
+        "synthesis": "Pyramids were built as god-scale afterlife machines, engineered to launch a pharaoh's soul into eternity, not just as tombs.",
+        "explanation": "They were tombs for pharaohs and also showed off how powerful Egypt was.",
+        "expectedQuality": "partial",
+        "index": 2,
+        "success": true,
+        "attemptsUsed": 1,
+        "mascotReactionMood": "encouraging",
+        "headline": "You nailed the power part!",
+        "feedbackText": "Yes! The pyramids absolutely screamed Egypt's power, and you caught that perfectly. The one thing to add: they weren't just tombs but **afterlife machines**, engineered to launch a pharaoh's soul into eternity. So the size wasn't only for show, it was doing spiritual work too."
+      },
+      {
+        "q": "should college be free",
+        "cal": "adept",
+        "synthesis": "The debate isn't really about fairness versus cost — it's a disagreement about who should absorb the risk of an investment with uncertain returns: individuals, or society as a whole.",
+        "explanation": "It's about whether individuals or society should bear the risk of an education that might not pay off.",
+        "expectedQuality": "strong",
+        "index": 3,
+        "success": true,
+        "attemptsUsed": 1,
+        "mascotReactionMood": "celebrating",
+        "headline": "You nailed the core of it!",
+        "feedbackText": "That's exactly the shift the whole debate hinges on: you moved past the surface fight about fairness versus cost and landed on the real disagreement, **who should absorb the risk when the payoff is uncertain**. Framing education as an investment with unpredictable returns is precisely why reasonable people split on this, and you said it in one clean sentence."
+      },
+      {
+        "q": "why do we get déjà vu",
+        "cal": "novice",
+        "synthesis": "Déjà vu is likely a brief glitch where your brain's familiarity-detection system fires before your memory-recall system catches up, so a new moment feels tagged as remembered.",
+        "explanation": "It's your brain remembering a dream you had.",
+        "expectedQuality": "off-target",
+        "index": 4,
+        "success": true,
+        "attemptsUsed": 1,
+        "mascotReactionMood": "encouraging",
+        "headline": "Warm, familiar feeling!",
+        "feedbackText": "That dream-memory idea is exactly the kind of thing déjà vu feels like, which is why so many people reach for it! The twist we landed on is that it is less about a real memory and more about a **timing glitch** where your brain's familiarity signal fires a beat before recall catches up, so a brand-new moment gets tagged as already remembered."
+      }
+    ]
+  }
+}

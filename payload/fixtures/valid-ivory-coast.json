@@ -2,7 +2,7 @@
   "expedition_metadata": {
     "user_query": "Why is there 'ivory' in Ivory Coast?",
     "calibration_level": "mid",
-    "assigned_visual_theme": "maritime_trade",
+    "assigned_visual_theme": "maritime_history",
     "total_cards": 3
   },
   "journey_deck": [
@@ -45,6 +45,11 @@
   ],
   "payoff_layer": {
     "explain_it_back_prompt": "In one sentence: why does a modern country carry the name of a 15th-century trade good?",
+    "branches": [
+      { "hook": "How did the Gold Coast become Ghana?", "category": "Historical Identity", "emoji": "🇬🇭" },
+      { "hook": "Why are African vs. Asian elephants different sizes?", "category": "Biology & Evolution", "emoji": "🐘" },
+      { "hook": "How did the pepper trade shape early globalization?", "category": "Global Economics", "emoji": "🌶️" }
+    ],
     "mint_card": {
       "title": "The Cargo Coast",
       "category": "Geography & Trade",

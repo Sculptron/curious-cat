@@ -2,75 +2,91 @@
   "expedition_metadata": {
     "user_query": "Why is there 'ivory' in Ivory Coast?",
     "calibration_level": "mid",
-    "assigned_visual_theme": "colonial_cartography",
-    "total_cards": 5
+    "assigned_visual_theme": "maritime_history",
+    "total_cards": 6
   },
   "journey_deck": [
     {
-      "card_id": "card_1",
+      "card_id": "c1",
       "type": "concept_card",
-      "act_title": "The Coast of Commodities",
-      "heading": "Europe named this coastline like a shopping list",
+      "act_title": "The Shopping-List Coast",
+      "heading": "Europe named the coast by what it could buy there",
       "body_markdown": [
-        "Starting in the 1470s, Portuguese ships worked their way along the Gulf of Guinea and did something very literal: they named each stretch of coast after whatever they were buying there.",
-        "Grain Coast for melegueta pepper. Gold Coast for gold. Slave Coast for enslaved people. And this one, for elephant tusks: **Costa do Marfim**, the Ivory Coast."
-      ],
-      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
-    },
-    {
-      "card_id": "card_2",
-      "type": "concept_card",
-      "act_title": "The Coast of Commodities",
-      "heading": "Ivory was the export, not the identity",
-      "body_markdown": [
-        "By the 1600s, French traders had taken over the tusk trade there and renamed it Cote d'Ivoire. The label held through three centuries, formal French colonization in 1893, and independence in 1960.",
-        "The name records **what left the port**, not necessarily what was most abundant inland. Ivory was simply the stretch's specialty line item in European trading company ledgers."
+        "The name isn't poetic or accidental. From the 1400s onward, European traders sailing down West Africa didn't think in terms of kingdoms or peoples. They thought in terms of cargo.",
+        "So they carved the coastline into commercial zones and labeled each one after its main export. **The map became a shopping list.** Ivory Coast was simply the stretch where the dominant good on offer was elephant ivory."
       ],
       "mascot_state": { "position": "progress_bar", "mood": "neutral" }
     },
     {
-      "card_id": "card_3",
+      "card_id": "c2",
       "type": "predict_card",
-      "heading": "Guess before you keep going: why 'ivory,' specifically, here?",
+      "heading": "Ivory Coast had neighbors named the same way. What were two of them named after?",
       "options": [
-        { "id": "opt_a", "label": "Elephants were far more numerous on this stretch than anywhere else in West Africa", "is_correct": false, "emoji": "🐘" },
-        { "id": "opt_b", "label": "This was the port where European ships loaded and sold the most tusks, wherever the elephants actually were", "is_correct": true },
-        { "id": "opt_c", "label": "The coastline's shape resembled a carved tusk on early maps", "is_correct": false }
+        { "id": "o1", "label": "Gold and enslaved people", "is_correct": true, "emoji": "🪙" },
+        { "id": "o2", "label": "Silk and spices", "is_correct": false },
+        { "id": "o3", "label": "Diamonds and oil", "is_correct": false, "emoji": "💎" }
       ],
       "reveal_payload": {
-        "mascot_reaction_mood": "celebrating",
-        "feedback_text": "Traders drew coastal zones by cargo manifest, not wildlife census. Tusks reaching this port were funneled in from hunting grounds deep in the forest interior, arriving here because **this was where the trading posts and ships were**, not because elephants were denser on this exact shoreline."
+        "mascot_reaction_mood": "mind_blown",
+        "feedback_text": "Right next door sat the **Gold Coast** (now Ghana) and the **Slave Coast** (parts of Togo, Benin, and Nigeria). There was even a Grain Coast, named for a pepper. The whole region was a row of export labels stamped by outsiders."
       }
     },
     {
-      "card_id": "card_4",
-      "type": "checkpoint_card",
-      "heading": "Same logic, different coast: what is 'Gold Coast' (modern Ghana) actually naming?",
-      "options": [
-        { "id": "opt_a", "label": "The coast where gold was the chief export loaded onto European ships", "is_correct": true },
-        { "id": "opt_b", "label": "The coast with unusually golden-colored sand beaches", "is_correct": false }
+      "card_id": "c3",
+      "type": "concept_card",
+      "act_title": "Why Ivory, Specifically",
+      "heading": "Elephant tusks were a luxury goldmine",
+      "body_markdown": [
+        "Ivory was carved into piano keys, billiard balls, combs, jewelry, and religious objects across Europe and Asia. It was durable, workable, and beautiful, and Africa's forest and savanna elephants had a lot of it.",
+        "For a couple of centuries, tusks moving through these ports were valuable enough that ivory, not gold or people, was the headline commodity of this particular stretch."
       ],
-      "correct_feedback": "Exactly right. Same naming convention, different commodity: European traders carved up this whole stretch of West Africa by what left each port, and gold was the specialty a bit further east.",
-      "incorrect_feedback": "Not quite, the sand had nothing to do with it. Gold Coast follows the exact same convention as Ivory Coast: a European trading name for the commodity that dominated that port's exports, in this case gold rather than tusks."
+      "mascot_state": { "position": "progress_bar", "mood": "thinking" }
     },
     {
-      "card_id": "card_5",
+      "card_id": "c4",
       "type": "concept_card",
-      "act_title": "The Coast of Commodities",
-      "heading": "The name outlived what it named",
+      "act_title": "The Name Outlived the Trade",
+      "heading": "The ivory ran out, but the label stuck",
       "body_markdown": [
-        "The ivory trade that gave the country its name also helped empty it of elephants. Tusk exports from this stretch ran into the tens of thousands of pounds a year through the 1600s and 1700s.",
-        "Today, conservationists estimate only a few hundred forest elephants survive in Cote d'Ivoire, scattered across a handful of isolated reserves. **The country kept the name long after it lost most of what the name described.**"
+        "Heavy hunting devastated the elephant populations, and by the time France formally colonized the territory in 1893, the ivory trade was a shadow of its peak. The economic reason for the name had largely vanished.",
+        "But names are stubborn. France kept it as Côte d'Ivoire, and at independence in 1960 the new nation kept it too. **A commercial nickname had hardened into a national identity.**"
       ],
-      "mascot_state": { "position": "progress_bar", "mood": "wide_eyed" }
+      "mascot_state": { "position": "progress_bar", "mood": "navigating" }
+    },
+    {
+      "card_id": "c5",
+      "type": "checkpoint_card",
+      "heading": "So why is 'ivory' in the name today?",
+      "options": [
+        { "id": "o1", "label": "It records what European traders once bought there, not what's there now", "is_correct": true },
+        { "id": "o2", "label": "The country still leads the world in ivory production", "is_correct": false, "emoji": "🐘" }
+      ],
+      "correct_feedback": "Exactly. The name is a fossil of a trade that faded before the country was even colonized. It describes an old transaction, not a current resource.",
+      "incorrect_feedback": "Not quite, and this is the real twist: the ivory trade had already collapsed before the name became official. The country doesn't lead in ivory today. The word survives as a historical label, not a live description."
+    },
+    {
+      "card_id": "c6",
+      "type": "concept_card",
+      "act_title": "The Reframe",
+      "heading": "The country insists on the original label",
+      "body_markdown": [
+        "Since 1986, the government has asked the world to use only Côte d'Ivoire, untranslated, in every language, and to stop saying Ivory Coast at all.",
+        "So a name that outsiders invented as a price tag has been reclaimed and fixed in place by the people it once described. **The shopping-list label became something worth defending.**"
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "celebrating" }
     }
   ],
   "payoff_layer": {
-    "explain_it_back_prompt": "In one sentence, explain to a friend why it's called Ivory Coast, and why that name is a bit of a fossil today.",
+    "explain_it_back_prompt": "In one sentence, how would you explain to a friend why 'ivory' ended up in the name of a country that doesn't trade ivory today?",
+    "branches": [
+      { "hook": "How did the Gold Coast become Ghana?", "category": "Historical Identity", "emoji": "🪙" },
+      { "hook": "Why does Côte d'Ivoire insist we don't translate its name?", "category": "Naming & Sovereignty", "emoji": "🗺️" },
+      { "hook": "What happened to Africa's elephants after the ivory boom?", "category": "Biology & Ecosystems", "emoji": "🐘" }
+    ],
     "mint_card": {
-      "title": "The Coast of Commodities",
-      "category": "Colonial Trade & Naming",
-      "shareable_synthesis": "Ivory Coast isn't named for having the most elephants, it's named for being the port where Europeans loaded the most tusks, and **the trade that named it helped wipe out the elephants it was named for**."
+      "title": "The Shopping-List Coast",
+      "category": "Maritime History",
+      "shareable_synthesis": "Ivory Coast is named after a trade that had already collapsed by the time the name stuck: **it's a price tag that became a country.**"
     }
   }
 }

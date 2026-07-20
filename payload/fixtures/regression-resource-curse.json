@@ -7,99 +7,100 @@
   },
   "journey_deck": [
     {
-      "card_id": "c1",
+      "card_id": "c1_paradox",
       "type": "concept_card",
       "act_title": "The Paradox",
-      "heading": "Rich ground, poor people",
+      "heading": "Wealth in the ground, poverty on the surface",
       "body_markdown": [
-        "Congo sits on an estimated **$24 trillion** in untapped minerals, including over 70% of the world's cobalt. Zambia is one of the top copper producers on earth. Angola's oil fields generate roughly 90% of its export revenue.",
-        "And yet: Congo's GDP per person is around $600 a year. Zambia defaulted on its debt in 2020. Angola's oil wealth barely touches most of its population.",
-        "This is not a coincidence of bad luck. It has a name and a mechanism."
-      ],
-      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
-    },
-    {
-      "card_id": "c2",
-      "type": "concept_card",
-      "act_title": "The Mechanism",
-      "heading": "Follow the resource, not the wealth",
-      "body_markdown": [
-        "The key difference is where a resource comes from. Oil, copper, and cobalt are **point-source**: pulled out of one location, easy for a small group to fence off, tax, and control.",
-        "Compare that to a farming economy, where wealth is spread across millions of small plots and producers. A government funded by farm taxes has to deal with those millions of people. A government funded by one oil field or one copper belt does not.",
-        "That single difference changes who a government answers to."
+        "The numbers really are that stark. The DRC holds roughly 70% of the world's mined cobalt and enormous copper reserves, yet its GDP per capita sits near $650 a year. Zambia's copper is about 70% of its exports. Angola's oil has run around 90% of its exports.",
+        "So the puzzle isn't whether the resources exist. It's why turning a mountain of copper or a sea of oil into broad prosperity keeps failing. Economists have a name for this pattern: the **resource curse** — countries dependent on a single extracted commodity tend to grow slower, not faster."
       ],
       "mascot_state": { "position": "progress_bar", "mood": "thinking" }
     },
     {
-      "card_id": "c3",
+      "card_id": "c2_dutch_disease",
       "type": "predict_card",
-      "heading": "If a government's money comes from one mine instead of millions of taxpayers, what happens to its incentive to be accountable to citizens?",
+      "heading": "When copper or oil money floods in, what happens to the rest of the economy?",
       "options": [
-        { "id": "a", "label": "It goes up, since a visible resource means visible scrutiny", "is_correct": false },
-        { "id": "b", "label": "It goes down, since the government no longer needs citizens' tax money to survive", "is_correct": true },
-        { "id": "c", "label": "It stays the same, resource income doesn't change political incentives", "is_correct": false }
+        { "id": "a", "label": "Farming and manufacturing boom alongside it", "is_correct": false },
+        { "id": "b", "label": "The currency strengthens and other exports become too expensive to sell", "is_correct": true, "emoji": "💱" },
+        { "id": "c", "label": "Nothing — one sector doesn't affect the others", "is_correct": false }
       ],
       "reveal_payload": {
-        "mascot_reaction_mood": "celebrating",
-        "feedback_text": "**No taxation, no representation.** When the treasury fills up from a mine or an oil field instead of ordinary people's paychecks, the old bargain, you fund the state and the state answers to you, never gets struck. Leaders can ignore citizens because they don't need their money."
+        "mascot_reaction_mood": "mind_blown",
+        "feedback_text": "This is **Dutch disease**. A flood of export dollars pushes up the local currency's value, which makes everything else the country could sell — crops, textiles, manufactured goods — too expensive on world markets. The mine or oilfield thrives while the industries that actually employ millions of people wither."
       }
     },
     {
-      "card_id": "c4",
+      "card_id": "c3_enclave",
       "type": "concept_card",
-      "act_title": "The Same Story, Three Countries",
-      "heading": "Different countries, same pattern",
+      "act_title": "The Machine Nobody Works At",
+      "heading": "Extraction employs capital, not people",
       "body_markdown": [
-        "Congo: colonial ruler Leopold II ran the territory as a personal extraction machine, forcing rubber and ivory quotas at gunpoint. After independence, Mobutu Sese Seko simply took over the same machine, reportedly looting **$4-5 billion** for himself while roads, schools, and hospitals collapsed.",
-        "Angola: oil funds roughly 90% of the state budget but employs less than 1% of the workforce. The 2020 **Luanda Leaks** exposed how the former president's daughter, Isabel dos Santos, accumulated over $2 billion while most Angolans lived on a few dollars a day.",
-        "Zambia: copper is over 70% of its exports, but a single global price crash in the 1970s tipped the country into decades of debt, a pattern that repeated when it defaulted again in 2020."
+        "Here's the second gear. A modern copper mine or offshore oil rig is enormously capital-intensive: it runs on imported machinery, foreign engineers, and a small workforce. Angola's oil sector generates the bulk of national revenue while directly employing only a tiny slice of the population.",
+        "So the wealth arrives as a narrow stream flowing to whoever owns the concession — often foreign firms plus a domestic elite — rather than as wages spread across a workforce. Economists call this an **enclave economy**: a high-value bubble that barely touches the surrounding country."
       ],
-      "mascot_state": { "position": "progress_bar", "mood": "wide_eyed" }
+      "mascot_state": { "position": "progress_bar", "mood": "neutral" }
     },
     {
-      "card_id": "c5",
+      "card_id": "c4_checkpoint",
       "type": "checkpoint_card",
-      "heading": "Why does a copper price crash hit Zambia so much harder than a wheat price dip hits a diversified farming economy?",
+      "heading": "Why doesn't a booming copper mine automatically create mass employment?",
       "options": [
-        { "id": "a", "label": "Because Zambia's whole economy, budget, and currency are built around one export, so there's nothing to fall back on", "is_correct": true },
-        { "id": "b", "label": "Because copper prices fall further than wheat prices ever do", "is_correct": false }
+        { "id": "a", "label": "Because extraction runs on expensive machinery and few workers, so most value flows to concession owners, not wages", "is_correct": true },
+        { "id": "b", "label": "Because mining is illegal to staff with local workers", "is_correct": false }
       ],
-      "correct_feedback": "Exactly. When one commodity is most of what you sell to the world, a price swing in that one commodity is a swing in your government's revenue and your currency's value at the same time.",
-      "incorrect_feedback": "Not quite, this isn't about how far prices move. It's about concentration: when copper is over 70% of what a country exports, a price crash doesn't just hurt one industry, it drains the government budget and the currency at once. A diversified economy has other sectors to absorb the hit."
+      "correct_feedback": "Exactly. The value is real but concentrated — it lands with owners and equipment, not with a broad payroll.",
+      "incorrect_feedback": "Not quite — there's no law against local hiring. The issue is structural: extraction is capital-intensive, so a giant mine can produce billions in exports while directly employing very few people. The money exists; it just doesn't spread through wages."
     },
     {
-      "card_id": "c6",
+      "card_id": "c5_rentier",
+      "type": "concept_card",
+      "act_title": "Who Holds the Tap",
+      "heading": "Money that doesn't come from taxing citizens",
+      "body_markdown": [
+        "Now the political gear. When a government's income comes from selling oil or copper rights rather than from taxing its own people, the accountability loop weakens. A state funded by citizens' taxes has to keep those citizens reasonably satisfied. A state funded by a single export tap does not.",
+        "This concentrates the stakes: whoever controls the resource controls the country's cash flow. That's why resource booms so often coincide with entrenched elites, weak public services, and — in Angola and the DRC — long stretches of conflict fought partly over who commands the mines and wells."
+      ],
+      "mascot_state": { "position": "progress_bar", "mood": "navigating" }
+    },
+    {
+      "card_id": "c6_debate",
       "type": "sit_with_it_card",
-      "heading": "Economists don't fully agree on what's actually to blame",
+      "heading": "So is it the resources themselves — or something underneath them?",
       "perspective_left": {
-        "title": "Institutions came first",
-        "summary": "This camp, associated with economists like Acemoglu and Robinson, argues the resource is almost incidental. What matters is that colonial rule set up extractive institutions built purely for taking, and post-independence elites inherited and kept those same institutions instead of building accountable ones. Give these countries a different history, they argue, and the same resources would look more like Norway's."
+        "title": "It's baked into the resources",
+        "summary": "One camp emphasizes mechanisms that flow almost automatically from commodity dependence: Dutch disease, price crashes that wreck budgets overnight (Angola's economy contracted hard after oil fell in 2014), and enclave extraction. On this view, heavy reliance on a single commodity is itself the trap, whoever is in charge."
       },
       "perspective_right": {
-        "title": "The resource itself is the mechanism",
-        "summary": "This camp, associated with economists like Sachs and Warner, argues resource wealth actively causes the damage regardless of starting institutions: it drives up the currency and prices local manufacturers out of world markets, it creates volatile revenue nobody can plan around, and it pulls ambitious people toward capturing rents instead of building businesses."
+        "title": "It's the institutions and history",
+        "summary": "Another camp, associated with economists like Acemoglu and Robinson, argues resources are only a curse where institutions are already extractive — a legacy of colonial systems built to pull wealth out rather than build it in. Norway and Botswana got rich on oil and diamonds because their rules distributed and reinvested the windfall. Resources magnify the institutions they land in."
       },
-      "synthesis_payload": "Both camps point to real evidence, and most economists today think the truth involves both: weak institutions make resource wealth easier to capture, and resource wealth makes it harder to build strong institutions afterward. **Nobody claims to have fully untangled which one comes first.**"
+      "synthesis_payload": "These aren't fully reconcilable, and serious economists still disagree on the weighting. What most now accept is that resources are an **amplifier, not a destiny** — they pour fuel on whatever institutional fire is already burning. The hard, unsettled question is how much a country can change its institutions while that fuel keeps pouring in."
     },
     {
-      "card_id": "c7",
+      "card_id": "c7_reframe",
       "type": "concept_card",
-      "act_title": "The Counter-Proof",
-      "heading": "The counter-proof: Botswana",
+      "act_title": "The Reframe",
+      "heading": "The wealth was never the missing piece",
       "body_markdown": [
-        "Botswana found diamonds around the same time Congo, Zambia, and Angola were dealing with theirs, and it is now one of Africa's richest countries per person.",
-        "The difference wasn't the diamonds. It was that Botswana's government negotiated a genuine revenue-sharing partnership with the mining company before the money started flowing, and it spent decades investing that revenue into schools, roads, and a functioning bureaucracy instead of letting a small circle absorb it.",
-        "The resource was never the curse by itself. It's what a government is set up to do with it before the money arrives."
+        "Put the gears together. Congo, Zambia and Angola aren't poor despite their resources — they're poor in a way that is tangled up with how those resources get extracted, sold, and captured. The commodity strengthens the currency, employs almost no one, funds a state that needn't answer to its people, and rewards controlling the tap over building anything else.",
+        "Botswana and Norway show it can go the other way. The deciding factor was never the size of the deposit. It was **whether the country's rules turned the windfall into wages, schools and diversified industry — or into a prize worth fighting over.**"
       ],
-      "mascot_state": { "position": "progress_bar", "mood": "encouraging" }
+      "mascot_state": { "position": "progress_bar", "mood": "celebrating" }
     }
   ],
   "payoff_layer": {
-    "explain_it_back_prompt": "In one sentence: why does having a valuable resource sometimes make a country's government less accountable to its own people, instead of more prosperous?",
+    "explain_it_back_prompt": "In one sentence, how would you explain to a friend why a country can be full of copper or oil and still be poor?",
+    "branches": [
+      { "hook": "How did Botswana get rich from diamonds when its neighbors didn't?", "category": "Development Success", "emoji": "💎" },
+      { "hook": "What actually is Dutch disease and where does the name come from?", "category": "Economic Mechanisms", "emoji": "💱" },
+      { "hook": "How did colonial borders and extraction shape modern African economies?", "category": "Colonial Legacy", "emoji": "🗺️" }
+    ],
     "mint_card": {
       "title": "The Resource Curse",
-      "category": "Political Economy",
-      "shareable_synthesis": "Congo, Zambia, and Angola aren't poor despite their resources, they're poor partly because of how those resources let governments get paid without ever needing their own citizens, **and Botswana proves that outcome was never inevitable**."
+      "category": "Economics & Development",
+      "shareable_synthesis": "Resource wealth doesn't build prosperity or poverty — it **amplifies whichever institutions it lands in.**"
     }
   }
 }
