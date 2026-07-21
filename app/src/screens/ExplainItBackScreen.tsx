@@ -1,31 +1,22 @@
 import { useState } from 'react'
 import { PenTool, Send, Sparkles, ChevronRight, MessageSquare, Award } from 'lucide-react'
 import CatMascot from '../components/CatMascot'
-import type { Journey } from '../types/journey'
-
-// NOTE: unlike journey generation, there is no payload/ contract yet for
-// this step — the product brief (§5) describes a *separate* live Claude
-// call that scores the user's own-words explanation, but nothing under
-// payload/ defines that request/response shape. Flagging this as a real
-// gap rather than guessing at a schema; feedback here is a local canned
-// placeholder until that endpoint is designed.
-function mockFeedback(): string {
-  return "You've captured the core idea in your own words — that's exactly the kind of active recall that makes it stick. Ready to mint your expedition card?"
-}
+import BoldText from '../components/BoldText'
+import { getExplainItBackFeedback } from '../lib/explainItBack'
+import type { ExplainItBackFeedback, Journey } from '../types/journey'
 
 export default function ExplainItBackScreen({ journey, onMint }: { journey: Journey; onMint: () => void }) {
   const [text, setText] = useState('')
   const [analyzing, setAnalyzing] = useState(false)
-  const [feedback, setFeedback] = useState<string | null>(null)
+  const [feedback, setFeedback] = useState<ExplainItBackFeedback | null>(null)
   const isValid = text.trim().split(/\s+/).length > 2
 
-  function submit() {
+  async function submit() {
     if (!isValid) return
     setAnalyzing(true)
-    setTimeout(() => {
-      setAnalyzing(false)
-      setFeedback(mockFeedback())
-    }, 1200)
+    const result = await getExplainItBackFeedback(text, journey.payoff_layer.mint_card.shareable_synthesis)
+    setAnalyzing(false)
+    setFeedback(result)
   }
 
   return (
@@ -81,13 +72,15 @@ export default function ExplainItBackScreen({ journey, onMint }: { journey: Jour
             </div>
             <div className="relative">
               <div className="absolute -top-6 left-4 z-10 bg-white rounded-full border-2 border-[#1A1A1A] p-1">
-                <CatMascot mood="happy" className="w-12 h-12" />
+                <CatMascot mood={feedback.mascot_reaction_mood} className="w-12 h-12" />
               </div>
               <div className="bg-[#FFFBEB] border-2 border-[#D97706] rounded-2xl pt-8 pb-5 px-5 mt-4">
                 <h3 className="serif-header font-bold text-base text-[#B45309] mb-2 flex items-center gap-2">
-                  Brilliant summary! <Sparkles className="w-4 h-4 text-[#D97706]" />
+                  {feedback.headline} <Sparkles className="w-4 h-4 text-[#D97706]" />
                 </h3>
-                <p className="text-sm text-[#1A1A1A] leading-relaxed">{feedback}</p>
+                <p className="text-sm text-[#1A1A1A] leading-relaxed">
+                  <BoldText text={feedback.feedback_text} />
+                </p>
               </div>
             </div>
           </div>

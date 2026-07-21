@@ -86,6 +86,15 @@ export interface SitWithItCard {
 
 export type JourneyCard = ConceptCard | PredictCard | CheckpointCard | SitWithItCard
 
+// payoff_layer.branches: exactly 3, emoji mandatory (unlike option.emoji
+// above) — branches are always concrete, launchable questions, not abstract
+// debate positions, per payload/validation-helpers.mjs's checkEmoji rule.
+export interface Branch {
+  hook: string
+  category: string
+  emoji: string
+}
+
 export interface Journey {
   expedition_metadata: {
     user_query: string
@@ -96,10 +105,20 @@ export interface Journey {
   journey_deck: JourneyCard[]
   payoff_layer: {
     explain_it_back_prompt: string
+    branches: Branch[]
     mint_card: {
       title: string
       category: string
       shareable_synthesis: string
     }
   }
+}
+
+// payload/explain-it-back-prompt.txt's response contract — a separate,
+// lightweight endpoint from journey generation (no pass/fail field on
+// purpose: this is a retention mechanic, not a gradeable test).
+export interface ExplainItBackFeedback {
+  mascot_reaction_mood: MascotMood
+  headline: string
+  feedback_text: string
 }

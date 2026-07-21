@@ -45,6 +45,11 @@
   ],
   "payoff_layer": {
     "explain_it_back_prompt": "In one sentence: why does a modern country carry the name of a 15th-century trade good?",
+    "branches": [
+      { "hook": "How did the Gold Coast become Ghana?", "category": "Historical Identity", "emoji": "🪙" },
+      { "hook": "Why does Côte d'Ivoire insist we don't translate its name?", "category": "Naming & Sovereignty", "emoji": "🗺️" },
+      { "hook": "What happened to Africa's elephants after the ivory boom?", "category": "Biology & Ecosystems", "emoji": "🐘" }
+    ],
     "mint_card": {
       "title": "The Cargo Coast",
       "category": "Geography & Trade",

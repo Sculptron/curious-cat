@@ -96,6 +96,11 @@
   ],
   "payoff_layer": {
     "explain_it_back_prompt": "In one sentence: why does having a valuable resource sometimes make a country's government less accountable to its own people, instead of more prosperous?",
+    "branches": [
+      { "hook": "How did Botswana avoid the resource curse with its diamonds?", "category": "Political Economy", "emoji": "💎" },
+      { "hook": "What is Dutch disease and how does it wreck local manufacturing?", "category": "Economics & Markets", "emoji": "💱" },
+      { "hook": "How did Norway turn its oil wealth into a sovereign wealth fund instead of a curse?", "category": "Political Economy", "emoji": "🛢️" }
+    ],
     "mint_card": {
       "title": "The Resource Curse",
       "category": "Political Economy",

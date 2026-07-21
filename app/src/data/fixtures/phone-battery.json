@@ -70,6 +70,11 @@
   ],
   "payoff_layer": {
     "explain_it_back_prompt": "In one sentence: why does a phone lose charge faster in the cold, and why does it often recover once it warms up?",
+    "branches": [
+      { "hook": "Why do electric car batteries lose range so much faster in winter?", "category": "Physics & Energy", "emoji": "🚗" },
+      { "hook": "Why does fast charging heat up a battery, and does that damage it?", "category": "Physics & Energy", "emoji": "🔥" },
+      { "hook": "Why do phone batteries degrade permanently after a couple of years?", "category": "Modern Computing & Silicon", "emoji": "📉" }
+    ],
     "mint_card": {
       "title": "The Battery That Wasn't Really Dying",
       "category": "Physics & Energy",

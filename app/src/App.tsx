@@ -101,7 +101,7 @@ export default function App() {
         {screen.kind === 'explain' && journey && <ExplainItBackScreen journey={journey} onMint={mintCard} />}
 
         {screen.kind === 'mint' && journey && (
-          <MintScreen journey={journey} onNewQuestion={() => returnToHub('explore')} onViewConstellation={() => returnToHub('constellation')} />
+          <MintScreen journey={journey} onBranch={launchExpedition} onViewConstellation={() => returnToHub('constellation')} />
         )}
       </div>
     </div>

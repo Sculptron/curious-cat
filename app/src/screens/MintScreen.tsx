@@ -6,11 +6,11 @@ import type { Journey } from '../types/journey'
 
 export default function MintScreen({
   journey,
-  onNewQuestion,
+  onBranch,
   onViewConstellation,
 }: {
   journey: Journey
-  onNewQuestion: () => void
+  onBranch: (hook: string) => void
   onViewConstellation: () => void
 }) {
   const cardRef = useRef<HTMLDivElement>(null)
@@ -100,21 +100,30 @@ export default function MintScreen({
         </button>
       </div>
 
-      {/* NOTE: the product brief's "Branch" step (§5 — three follow-up
-          curiosities) has no corresponding payload field (confirmed against
-          validate.mjs and every fixture), so this deliberately doesn't
-          fabricate branch topics Claude never generated. */}
-      <div className="w-full max-w-[280px] mx-auto space-y-3">
-        <button
-          onClick={onNewQuestion}
-          className="w-full bg-[#1E293B] border border-[#374151] hover:border-[#D97706] p-4 rounded-2xl flex items-center justify-between group transition"
-        >
-          <span className="flex items-center gap-2 text-sm font-bold text-[#E5E7EB] group-hover:text-[#FBBF24]">
-            <Sparkles className="w-4 h-4" /> Ask another question
-          </span>
-          <ArrowRight className="w-4 h-4 text-[#4B5563] group-hover:text-[#FBBF24]" />
-        </button>
-        <button onClick={onViewConstellation} className="w-full text-[#9CA3AF] text-xs font-bold uppercase tracking-widest py-2 hover:text-white transition">
+      <div className="w-full max-w-[280px] mx-auto">
+        <div className="flex items-center gap-2 mb-3 text-[#9CA3AF]">
+          <Sparkles className="w-3.5 h-3.5" />
+          <h3 className="text-[11px] font-extrabold uppercase tracking-widest">Continue down the rabbit hole...</h3>
+        </div>
+        <div className="space-y-3">
+          {journey.payoff_layer.branches.map((branch) => (
+            <button
+              key={branch.hook}
+              onClick={() => onBranch(branch.hook)}
+              className="w-full bg-[#1E293B] border border-[#374151] hover:border-[#D97706] p-4 rounded-2xl flex items-center justify-between group transition text-left"
+            >
+              <span className="flex items-center gap-3">
+                <span className="w-10 h-10 rounded-full bg-[#D97706]/20 flex items-center justify-center text-lg shrink-0">{branch.emoji}</span>
+                <span>
+                  <span className="block text-sm font-bold text-[#E5E7EB] group-hover:text-[#FBBF24]">{branch.hook}</span>
+                  <span className="block text-[10px] mt-0.5 font-medium uppercase tracking-wider text-[#9CA3AF]">{branch.category}</span>
+                </span>
+              </span>
+              <ArrowRight className="w-4 h-4 text-[#4B5563] group-hover:text-[#FBBF24] shrink-0" />
+            </button>
+          ))}
+        </div>
+        <button onClick={onViewConstellation} className="w-full text-[#9CA3AF] text-xs font-bold uppercase tracking-widest py-4 hover:text-white transition">
           View Constellation Map 🌌
         </button>
       </div>
