@@ -31,9 +31,17 @@ export default function App() {
   async function launchExpedition(query: string) {
     setJourneyReady(false)
     setScreen({ kind: 'charting', query })
-    const result = await getJourney(query)
-    setJourney(result)
-    setJourneyReady(true)
+    try {
+      const result = await getJourney(query, calibration)
+      setJourney(result)
+      setJourneyReady(true)
+    } catch (err) {
+      // No dedicated error screen exists yet (frontend-owned; out of scope
+      // here) — surface the failure and return to the hub rather than
+      // leaving the charting screen spinning forever on a real API error.
+      window.alert(err instanceof Error ? err.message : 'Something went wrong charting that expedition. Please try again.')
+      setScreen({ kind: 'hub' })
+    }
   }
 
   function finishJourney() {
@@ -98,7 +106,7 @@ export default function App() {
 
         {screen.kind === 'journey' && journey && <JourneyScreen journey={journey} onFinish={finishJourney} />}
 
-        {screen.kind === 'explain' && journey && <ExplainItBackScreen journey={journey} onMint={mintCard} />}
+        {screen.kind === 'explain' && journey && <ExplainItBackScreen journey={journey} calibration={calibration} onMint={mintCard} />}
 
         {screen.kind === 'mint' && journey && (
           <MintScreen journey={journey} onBranch={launchExpedition} onViewConstellation={() => returnToHub('constellation')} />

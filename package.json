@@ -1,0 +1,9 @@
+{
+  "name": "curious-cat",
+  "private": true,
+  "type": "module",
+  "description": "Repo-root package for Vercel serverless functions under api/. The frontend (app/) and the payload/ CLI tools keep their own package.json files; this one exists only so Vercel's build installs api/'s dependencies.",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.1"
+  }
+}

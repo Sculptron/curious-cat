@@ -3,9 +3,18 @@ import { PenTool, Send, Sparkles, ChevronRight, MessageSquare, Award } from 'luc
 import CatMascot from '../components/CatMascot'
 import BoldText from '../components/BoldText'
 import { getExplainItBackFeedback } from '../lib/explainItBack'
+import type { UiCalibration } from '../lib/calibration'
 import type { ExplainItBackFeedback, Journey } from '../types/journey'
 
-export default function ExplainItBackScreen({ journey, onMint }: { journey: Journey; onMint: () => void }) {
+export default function ExplainItBackScreen({
+  journey,
+  calibration,
+  onMint,
+}: {
+  journey: Journey
+  calibration: UiCalibration
+  onMint: () => void
+}) {
   const [text, setText] = useState('')
   const [analyzing, setAnalyzing] = useState(false)
   const [feedback, setFeedback] = useState<ExplainItBackFeedback | null>(null)
@@ -14,9 +23,19 @@ export default function ExplainItBackScreen({ journey, onMint }: { journey: Jour
   async function submit() {
     if (!isValid) return
     setAnalyzing(true)
-    const result = await getExplainItBackFeedback(text, journey.payoff_layer.mint_card.shareable_synthesis)
-    setAnalyzing(false)
-    setFeedback(result)
+    try {
+      const result = await getExplainItBackFeedback(
+        journey.expedition_metadata.user_query,
+        calibration,
+        journey.payoff_layer.mint_card.shareable_synthesis,
+        text,
+      )
+      setFeedback(result)
+    } catch (err) {
+      window.alert(err instanceof Error ? err.message : 'The cat could not read your explanation. Please try again.')
+    } finally {
+      setAnalyzing(false)
+    }
   }
 
   return (
